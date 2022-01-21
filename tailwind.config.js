@@ -3,7 +3,9 @@ module.exports = {
   mode: "jit",
   purge: ["./app/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      borderStyle: ["hover"],
+    },
   },
   plugins: [],
 };
