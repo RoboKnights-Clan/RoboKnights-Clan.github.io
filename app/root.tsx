@@ -15,7 +15,7 @@ export let links: LinksFunction = () => {
 };
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "RoboKnights" };
 };
 
 export default function App() {

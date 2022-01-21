@@ -49,7 +49,7 @@ export default function Header() {
         </svg>
       </a>
       <button
-        className="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        className="text-black inline-flex p-3 hover:bg-gray-200 rounded lg:hidden ml-auto hover:text-black trasition duration-200 ease-in-out outline-none nav-toggler"
         data-target="#navigation"
       >
         <svg
@@ -76,7 +76,8 @@ export default function Header() {
             <a
               key={index}
               href={link.url}
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-gray-900 hover:text-white"
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center border-b-4
+              border-transparent hover:border-current transition duration-200 ease-in-out"
             >
               <span>{link.name}</span>
             </a>
