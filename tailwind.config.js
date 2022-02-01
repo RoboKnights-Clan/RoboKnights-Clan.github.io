@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {
       borderStyle: ["hover"],
+      fontFamily: {
+        sans: ["Work Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
