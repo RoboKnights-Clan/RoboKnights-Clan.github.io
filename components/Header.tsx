@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="flex items-center p-3 flex-wrap">
+      <nav className="flex items-center md:mx-16 p-3 flex-wrap">
         <Link href="/">
           <a className="p-2 mr-4 inline-flex items-center">
             <svg
