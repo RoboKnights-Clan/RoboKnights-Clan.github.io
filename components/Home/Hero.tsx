@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -14,9 +15,11 @@ const Hero = () => {
               The Robotics Club of Delhi Public School R.K. Puram
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex mr-2 text-black bg-white border-2 border-black py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg">
-                Resources
-              </button>
+              <Link href="/resources">
+                <a className="inline-flex mr-2 text-black bg-white border-2 border-black py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg">
+                  Resources
+                </a>
+              </Link>
               <button className="inline-flex mr-2 text-black bg-white border-2 border-black py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg">
                 Blogs
               </button>
