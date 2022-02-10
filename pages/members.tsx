@@ -5,6 +5,18 @@ import { members } from "../data/members";
 
 const MembersPage = () => {
   useTitle("Members");
+
+  let [shownMembers, setMembers] = React.useState(members);
+
+  const onSearchBarChange = () => {
+      const input = document.getElementById("search") as HTMLInputElement;
+      if (input.value != ''){
+          setMembers(members.map((mem, index) => {
+             return {year: mem.year, members: mem.members.filter(m => m.name.toLowerCase().includes(input.value.toLowerCase()))}
+          }));
+      }
+  };
+
   return (
     <div>
       <Header />
@@ -18,9 +30,10 @@ const MembersPage = () => {
             type="text"
             className="border-2 p-2 border-black w-60"
             placeholder="Search"
+            onInput={onSearchBarChange}
           />
         </div>
-        {members.map((mem, index) => {
+        {shownMembers.filter(m => m.members.length > 0).map((mem, index) => {
           return (
             <div key={index}>
               <h2 className={"text-black text-3xl pb-6 pt-12"}>{mem.year}</h2>
