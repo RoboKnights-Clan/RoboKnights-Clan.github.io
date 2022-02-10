@@ -15,6 +15,7 @@ const MembersPage = () => {
              return {year: mem.year, members: mem.members.filter(m => m.name.toLowerCase().includes(input.value.toLowerCase()))}
           }));
       }
+      else setMembers(members);
   };
 
   return (
