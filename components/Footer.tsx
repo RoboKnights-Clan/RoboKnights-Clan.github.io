@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const socials = [
@@ -49,6 +50,7 @@ const Footer = () => {
             {socials.map((social) => (
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 key={social.name}
                 href={social.link}
                 className="text-white hover:text-gray-300 mr-2 flex items-center"
