@@ -14,7 +14,7 @@ const AlumniPage = () => {
         <td className="px-4 py-3">{ment.competition}</td>
         <td className="px-4 pr-0 py-3">{ment.level}</td>
         <td className="px-4 py-3">{ment.year}</td>
-        <td className="px-4 py-3 text-lg text-gray-900">{ment.prize}</td>
+        <td className="px-4 py-3 text-gray-900">{ment.prize}</td>
       </tr>
     );
   });
@@ -37,16 +37,16 @@ const AlumniPage = () => {
           <table className="table-auto w-full text-left whitespace-no-wrap">
             <thead>
               <tr>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100 rounded-tl rounded-bl">
                   Competition
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
                   Level
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
                   Year
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
                   Prize
                 </th>
               </tr>
