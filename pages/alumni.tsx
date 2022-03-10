@@ -36,13 +36,35 @@ const AlumniPage = () => {
             Roboknights has an extensive, well connected alumni network which
             guides and mentors its members into the right path.
           </p>
-          <input
-            id={"search"}
-            type="text"
-            className="border-2 p-2 border-black w-60"
-            placeholder="Search"
-            onInput={onSearchBarChange}
-          />
+          <div className="container">
+            <div className="relative">
+              <div className="absolute top-4 left-3">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+                <i className="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>{" "}
+              </div>{" "}
+              <input
+                id="search"
+                type="text"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 border-black"
+                placeholder="Search"
+                onInput={onSearchBarChange}
+              />
+            </div>
+          </div>
         </div>
         {shownAlumni
           .filter((a) => a.people.length > 0)
