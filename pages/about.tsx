@@ -39,7 +39,7 @@ const AboutPage = () => {
           />
         </div>
       </div>
-      <div className="flex-flex-col mx-auto md:p-0 px-5 md:mx-24">
+      <div className="container mx-auto md:px-24 flex px-5 py-12 flex-col items-center">
         {about.map((item, index) => (
           <div className="border-2 border-black mb-4" key={index}>
             <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center">
