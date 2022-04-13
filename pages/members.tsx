@@ -12,7 +12,7 @@ const MembersPage = () => {
     const input = document.getElementById("search") as HTMLInputElement;
     if (input.value != "") {
       setMembers(
-        members.map((mem, index) => {
+        members.map((mem) => {
           return {
             year: mem.year,
             members: mem.members.filter((m) =>
@@ -67,17 +67,25 @@ const MembersPage = () => {
           .map((mem, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-black text-3xl pb-6 pt-12"}>{mem.year}</h2>
+                <h2 className={"text-black font-medium text-3xl pb-6 pt-12"}>
+                  {mem.year}
+                </h2>
                 <div className="flex flex-wrap -m-2">
                   {mem.members.map((mem, index) => {
                     return (
-                      <div className="p-2 lg:w-1/5 md:w-1/2 w-full" key={index}>
-                        <div className="h-32 flex items-center border-black border-2 p-4">
-                          <div className="flex-grow p-5">
-                            <h2 className="text-gray-900 title-font font-medium text-xl">
-                              {mem.name}
-                            </h2>
-                            <p className="text-gray-500">{mem.role}</p>
+                      <div
+                        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 py-4 m-3 rounded-md"
+                        key={index}
+                      >
+                        <div className="flex flex-row space-x-4 items-center">
+                          <img
+                            className="rounded-full aspect-square object-cover object-center w-1/2"
+                            src={mem.src}
+                            alt={mem.name}
+                          />
+                          <div className="flex flex-col">
+                            <h3 className="text-xl font-medium">{mem.name}</h3>
+                            <p className="text-gray-600">{mem.role}</p>
                           </div>
                         </div>
                       </div>
