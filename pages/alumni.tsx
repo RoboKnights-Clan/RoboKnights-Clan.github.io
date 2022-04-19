@@ -59,7 +59,7 @@ const AlumniPage = () => {
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 border-black"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black"
                 placeholder="Search"
                 onInput={onSearchBarChange}
               />
@@ -71,14 +71,14 @@ const AlumniPage = () => {
           .map((alum, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-black text-3xl pb-6 pt-12"}>
+                <h2 className={"text-black text-3xl pb-6 font-medium pt-12"}>
                   {alum.batch}
                 </h2>
                 <div className="flex flex-wrap -m-2">
                   {alum.people.map((alum, index) => {
                     return (
                       <div className="p-2 lg:w-1/5 md:w-1/2 w-full" key={index}>
-                        <div className="h-32 flex items-center border-black border-2 p-4">
+                        <div className="h-32 flex items-center border-black rounded-md border-2 p-4">
                           <div className="flex-grow p-5">
                             <h2 className="text-gray-900 title-font font-medium text-xl">
                               {alum.name}

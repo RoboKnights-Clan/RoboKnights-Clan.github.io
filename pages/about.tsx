@@ -41,7 +41,7 @@ const AboutPage = () => {
       </div>
       <div className="container mx-auto md:px-24 flex px-5 py-12 flex-col items-center">
         {about.map((item, index) => (
-          <div className="border-2 border-black mb-4" key={index}>
+          <div className="border-2 border-black mb-4 rounded-md" key={index}>
             <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 className="title-font sm:text-2xl text-xl mb-2 font-bold text-gray-900">
