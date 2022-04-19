@@ -55,7 +55,7 @@ const MembersPage = () => {
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 border-black"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black"
                 placeholder="Search"
                 onInput={onSearchBarChange}
               />
@@ -74,7 +74,7 @@ const MembersPage = () => {
                   {mem.members.map((mem, index) => {
                     return (
                       <div
-                        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 py-4 m-3 rounded-md"
+                        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 m-2 py-4 rounded-md"
                         key={index}
                       >
                         <div className="flex flex-row space-x-4 items-center">

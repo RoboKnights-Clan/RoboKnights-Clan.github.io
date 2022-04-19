@@ -175,7 +175,7 @@ export const members = [
       {
         name: "Agastya Vatts",
         role: "Member",
-        src: "https://dummyimage.com/400x400/c7c7c7/fff",
+        src: "/images/members/Agastya.jpg",
       },
     ],
   },
