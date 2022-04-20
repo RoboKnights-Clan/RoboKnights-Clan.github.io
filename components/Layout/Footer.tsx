@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { links } from "./Header";
@@ -64,17 +65,17 @@ const Footer = () => {
           <div className="flex flex-col space-y-1">
             {links.map((link, index) => {
               return (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  {link.name}
-                </a>
+                <Link key={index} href={link.url}>
+                  <a className="text-white">{link.name}</a>
+                </Link>
               );
             })}
+            <Link href="/resources">
+              <a className="text-white">Resources</a>
+            </Link>
+            <Link href="/blog">
+              <a className="text-white">Blog</a>
+            </Link>
           </div>
         </div>
       </div>
