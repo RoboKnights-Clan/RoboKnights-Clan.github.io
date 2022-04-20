@@ -5,11 +5,11 @@ import { links } from "./Header";
 const socials: { icon: React.ReactFragment; url: string }[] = [
   {
     icon: <FaGithub />,
-    url: "https://github.com/GarvJain03",
+    url: "https://github.com/RoboKnights-Clan",
   },
   {
     icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/garv-jain-907aa6218/",
+    url: "https://www.linkedin.com",
   },
   {
     icon: <FaFacebook />,
@@ -17,7 +17,7 @@ const socials: { icon: React.ReactFragment; url: string }[] = [
   },
   {
     icon: <FaInstagram />,
-    url: "https://www.instagram.com/garvjain03/",
+    url: "https://www.instagram.com",
   },
 ];
 
