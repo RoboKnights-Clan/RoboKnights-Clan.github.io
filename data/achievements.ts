@@ -1,5 +1,11 @@
 export const achievements = [
   {
+    competition: "Iwallet event of Techfest '21/22 IITB",
+    level: "International",
+    year: "2022",
+    prize: "Finalist",
+  },
+  {
     competition:
       "Robotics event of Silico Battles v17.1, organised by Ahlcon Public School Mayur Vihar",
     level: "Interschool",
