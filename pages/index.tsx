@@ -1,15 +1,14 @@
 import type { NextPage } from "next";
-import Header from "../components/Header";
 import Hero from "../components/Home/Hero";
-import useTitle from "../hooks/use-title";
+import Video from "../components/Home/Video";
+import Layout from "../components/Layout/Layout";
 
 const Home: NextPage = () => {
-  useTitle("Home");
   return (
-    <div>
-      <Header />
+    <Layout title="Home">
       <Hero />
-    </div>
+      <Video />
+    </Layout>
   );
 };
 

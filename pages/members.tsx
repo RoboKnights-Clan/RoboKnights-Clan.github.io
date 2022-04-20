@@ -1,11 +1,8 @@
 import React from "react";
-import useTitle from "../hooks/use-title";
-import Header from "../components/Header";
+import Layout from "../components/Layout/Layout";
 import { members } from "../data/members";
 
 const MembersPage = () => {
-  useTitle("Members");
-
   let [shownMembers, setMembers] = React.useState(members);
 
   const onSearchBarChange = () => {
@@ -25,8 +22,7 @@ const MembersPage = () => {
   };
 
   return (
-    <div>
-      <Header />
+    <Layout title="Members">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
           <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
@@ -96,7 +92,7 @@ const MembersPage = () => {
             );
           })}
       </div>
-    </div>
+    </Layout>
   );
 };
 
