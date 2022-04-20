@@ -1,0 +1,85 @@
+import React from "react";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { links } from "./Header";
+
+const socials: { icon: React.ReactFragment; url: string }[] = [
+  {
+    icon: <FaGithub />,
+    url: "https://github.com/GarvJain03",
+  },
+  {
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/garv-jain-907aa6218/",
+  },
+  {
+    icon: <FaFacebook />,
+    url: "https://facebook.com",
+  },
+  {
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/garvjain03/",
+  },
+];
+
+const Footer = () => {
+  return (
+    <div className="container p-5 bg-dark text-center flex items-center lg:text-left">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2">
+        <div className="mb-6 lg:mr-24 sm:mx-auto flex items-center justify-center">
+          <img src="/images/traced_logo.svg" alt="" />
+        </div>
+
+        <div className="mb-6 sm:mx-auto flex flex-col items-center justify-center">
+          <h5 className="font-bold mb-2.5 text-lg text-white w-full">
+            Get in Touch
+          </h5>
+          <p className="text-white">Delhi Public School, R. K. Puram</p>
+          <p className="text-white w-full mt-2"> roboknights@dpsrkp.net</p>
+          <p className="text-white w-full mt-2">ajithkumarkg@dpsrkp.net</p>
+        </div>
+
+        <div className="mb-6 lg:pr-12 sm:mx-auto flex flex-col items-center justify-center">
+          <h5 className="font-bold mb-2.5 text-lg block text-white w-full">
+            Our Socials
+          </h5>
+          <div className="flex space-x-4 flex-row">
+            {socials.map((social, index) => {
+              return (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white text-xl"
+                >
+                  {social.icon}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h5 className="font-bold mb-2.5 text-lg text-white">Links</h5>
+          <div className="flex flex-col space-y-1">
+            {links.map((link, index) => {
+              return (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  {link.name}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
