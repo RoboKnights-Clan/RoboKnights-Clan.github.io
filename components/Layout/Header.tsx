@@ -39,7 +39,6 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {console.log(router.pathname)}
       <header className="sticky top-0 z-50 bg-white">
         <div className="flex p-5 lg:items-center">
           <Link href="/">
