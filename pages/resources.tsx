@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "../components/Layout/Header";
+import Layout from "../components/Layout/Layout";
 import { resources } from "../data/resources";
-import useTitle from "../hooks/use-title";
 
 const ResourcesPage = () => {
-  useTitle("Resources");
   return (
-    <div>
-      <Header />
+    <Layout title="Resources">
       <div className="container mx-auto md:px-24 px-5 py-8">
         <div className="flex flex-col w-full mb-8">
           <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">
@@ -36,7 +33,7 @@ const ResourcesPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
