@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { useRouter } from "next/router";
 
-const links: { name: string; url: string }[] = [
+export const links: { name: string; url: string }[] = [
   {
     name: "Home",
     url: "/",

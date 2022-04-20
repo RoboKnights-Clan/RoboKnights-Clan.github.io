@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/Layout/Header";
 import { resources } from "../data/resources";
 import useTitle from "../hooks/use-title";
 
