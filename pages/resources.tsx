@@ -20,7 +20,10 @@ const ResourcesPage = () => {
         </div>
         <div className="flex flex-col">
           {resources.map((resource, index) => (
-            <div className="border-2 border-black p-5 mb-4" key={index}>
+            <div
+              className="border-2 rounded-md border-black p-5 mb-4"
+              key={index}
+            >
               <h1 className="title-font sm:text-2xl text-xl mb-2 font-semibold text-gray-900">
                 {resource.name}
               </h1>
