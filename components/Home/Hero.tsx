@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="container mx-auto lg:px-24 flex px-5 py-12 md:flex-row flex-col items-center">
+    <div className="container mx-auto lg:px-24 flex px-5 py-12 md:flex-row flex-col items-center text-dark">
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-black">
+        <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm">
           RoboKnights
         </h1>
         <p className="mb-8 leading-relaxed">
@@ -14,11 +14,11 @@ const Hero = () => {
         </p>
         <div className="flex justify-center">
           <Link href="/resources">
-            <a className="inline-flex mr-2 text-black bg-white border-2 border-black py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg">
+            <a className="inline-flex mr-2 text-dark bg-white border-2 border-black py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
               Resources
             </a>
           </Link>
-          <button className="inline-flex mr-2 text-black bg-white border-2 border-black py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg">
+          <button className="inline-flex mr-2 text-dark bg-white border-2 border-black py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
             Blogs
           </button>
         </div>

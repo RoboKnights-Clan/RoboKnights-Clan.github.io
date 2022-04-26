@@ -25,7 +25,7 @@ const AlumniPage = () => {
     <Layout title="Alumni">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-1 text-gray-900">
+          <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 font-sanssm">
             Alumni
           </h1>
           <p className="lg:w-2/3 leading-relaxed text-base mb-8">
@@ -67,7 +67,7 @@ const AlumniPage = () => {
           .map((alum, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-black text-3xl pb-6 font-medium pt-12"}>
+                <h2 className={"text-dark text-3xl pb-6 font-medium pt-12"}>
                   {alum.batch}
                 </h2>
                 <div className="flex flex-wrap -m-2">
@@ -76,7 +76,7 @@ const AlumniPage = () => {
                       <div className="p-2 lg:w-1/5 md:w-1/2 w-full" key={index}>
                         <div className="h-32 flex items-center border-black rounded-md border-2 p-4">
                           <div className="flex-grow p-5">
-                            <h2 className="text-gray-900 title-font font-medium text-xl">
+                            <h2 className="text-gray-900 font-sanssm font-medium text-xl">
                               {alum.name}
                             </h2>
                             <p className="text-gray-500">{alum.role}</p>

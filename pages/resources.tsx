@@ -7,7 +7,7 @@ const ResourcesPage = () => {
     <Layout title="Resources">
       <div className="container mx-auto md:px-24 px-5 py-8">
         <div className="flex flex-col w-full mb-8">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-bold  mb-2 text-gray-900">
             Resources
           </h1>
           <p className="lg:w-2/3 leading-relaxed text-base mb-4">
@@ -24,7 +24,7 @@ const ResourcesPage = () => {
               className="border-2 rounded-md border-black p-5 mb-4"
               key={index}
             >
-              <h1 className="title-font sm:text-2xl text-xl mb-2 font-semibold text-gray-900">
+              <h1 className=" sm:text-2xl text-xl mb-2 font-semibold text-gray-900">
                 {resource.name}
               </h1>
               <h2 className="mb-2 text-lg">{resource.date}</h2>

@@ -20,7 +20,7 @@ const AlumniPage = () => {
     <Layout title="Achievements">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font mb-1 text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-bold  mb-1 text-gray-900 font-sanssm">
             Achievements
           </h1>
           <p className="lg:w-2/3 leading-relaxed text-base mb-8">
@@ -33,16 +33,16 @@ const AlumniPage = () => {
           <table className="table-auto w-full text-left whitespace-no-wrap">
             <thead>
               <tr>
-                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100 rounded-tl rounded-bl">
+                <th className="px-4 py-3  tracking-wider font-bold text-gray-900 text-sm uppercase rounded-tl rounded-bl font-sansm">
                   Competition
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
+                <th className="px-4 py-3  tracking-wider font-bold text-gray-900 text-sm uppercase font-sansm">
                   Level
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
+                <th className="px-4 py-3  tracking-wider font-bold text-gray-900 text-sm uppercase font-sansm">
                   Year
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm uppercase bg-gray-100">
+                <th className="px-4 py-3  tracking-wider font-bold text-gray-900 text-sm uppercase font-sansm">
                   Prize
                 </th>
               </tr>

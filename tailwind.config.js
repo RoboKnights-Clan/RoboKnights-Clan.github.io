@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Work Sans", "sans-serif"],
+        sans: ["WorkSans", "sans-serif"],
+        sansm: ["WSans-Medium", "sans-serif"],
+        sanssm: ["WSans-SemiBold", "sans-serif"]
       },
       colors: {
         dark: "#242424",

@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-6 sm:mx-auto flex flex-col items-center justify-center">
-          <h5 className="font-bold mb-2.5 text-lg text-white w-full">
+          <h5 className="font-bold mb-2.5 text-lg text-white w-full font-sanssm">
             Get in Touch
           </h5>
           <p className="text-white">Delhi Public School, R. K. Puram</p>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-6 lg:pr-12 sm:mx-auto flex flex-col items-center justify-center">
-          <h5 className="font-bold mb-2.5 text-lg block text-white w-full">
+          <h5 className="font-bold mb-2.5 text-lg block text-white w-full font-sanssm">
             Our Socials
           </h5>
           <div className="flex space-x-4 flex-row">
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-6">
-          <h5 className="font-bold mb-2.5 text-lg text-white">Links</h5>
+          <h5 className="font-bold mb-2.5 text-lg text-white font-sanssm">Links</h5>
           <div className="flex flex-col space-y-1">
             {links.map((link, index) => {
               return (

@@ -43,7 +43,7 @@ const MembersPage = () => {
             alt={mem.name}
           />
           <div className="flex flex-col">
-            <h3 className="text-xl font-medium">{mem.name}</h3>
+            <h3 className="text-xl font-medium text-dark font-sanssm">{mem.name}</h3>
             <p className="text-gray-600">{mem.role}</p>
             <div className="flex space-x-1 my-2 flex-row">
               {mem.socials ? (
@@ -54,7 +54,7 @@ const MembersPage = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black text-xl"
+                      className="text-dark text-xl"
                     >
                       {social.type == "github" ? (
                         <FaGithub />
@@ -90,7 +90,7 @@ const MembersPage = () => {
     <Layout title="Members">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
+          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark font-sanssm">
             Members
           </h1>
           <div className="container">
@@ -128,7 +128,7 @@ const MembersPage = () => {
           .map((mem, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-black font-medium text-3xl pb-6 pt-12"}>
+                <h2 className={"text-dark font-medium text-3xl pb-6 pt-12 font-sansm"}>
                   {mem.year}
                 </h2>
                 <div className="flex flex-wrap -m-2">

@@ -7,9 +7,9 @@ import { about } from "../data/about";
 const AboutPage = () => {
   return (
     <Layout title="About">
-      <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center">
+      <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center text-dark">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+          <h1 className=" sm:text-4xl text-3xl mb-4 font-bold text-dark">
             About
           </h1>
           <p className="mb-8 leading-relaxed text-justify">
@@ -41,13 +41,13 @@ const AboutPage = () => {
           <div className="border-2 border-black mb-4 rounded-md" key={index}>
             <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font sm:text-2xl text-xl mb-2 font-bold text-gray-900">
+                <h1 className=" sm:text-2xl text-xl mb-2 font-bold text-dark">
                   {item.name}
                 </h1>
-                <h1 className="title-font sm:text-xl text-lg mb-4 font-medium text-gray-500">
+                <h1 className=" sm:text-xl text-lg mb-4 font-medium text-gray-500">
                   {item.role}
                 </h1>
-                <p className="mb-8 leading-relaxed text-justify">{item.desc}</p>
+                <p className="mb-8 leading-relaxed text-justify text-dark">{item.desc}</p>
               </div>
               <div className="w-72">
                 <img
