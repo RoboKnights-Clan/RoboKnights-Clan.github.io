@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import { members } from "../data/members";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaBehance, FaMedium, FaYoutube } from "react-icons/fa";
 
 const MembersPage = () => {
   let [shownMembers, setMembers] = React.useState(members);
@@ -20,6 +21,53 @@ const MembersPage = () => {
       );
     } else setMembers(members);
   };
+
+  const memberElement = (mem: any, index: number) => {
+    return (
+      <div
+        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 m-2 py-4 rounded-md"
+        key={index}
+      >
+        <div className="flex flex-row space-x-4 items-center">
+          <img
+            className="rounded-full aspect-square object-cover object-center w-1/2"
+            src={mem.src}
+            alt={mem.name}
+          />
+          <div className="flex flex-col">
+            <h3 className="text-xl font-medium">{mem.name}</h3>
+            <p className="text-gray-600">{mem.role}</p>
+            <div className="flex flex-row space-x-2 my-2 flex-wrap">
+          {mem.socials ? mem.socials.map((social: any, index: number) => { return(<a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black text-xl"
+                >
+                  {
+                    social.type == "github" ?
+                    <FaGithub /> : 
+                    social.type == "instagram" ?
+                    <FaInstagram /> :
+                    social.type == "facebook" ?
+                    <FaFacebook /> :
+                    social.type == "behance" ?
+                    <FaBehance /> : 
+                    social.type == "medium" ?
+                    <FaMedium /> :
+                    social.type == "youtube" ?
+                    <FaYoutube /> :
+                    social.type == "linkedin" ?
+                    <FaLinkedin /> : <></>
+                  }
+                </a>) }) : <></>}
+          </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <Layout title="Members">
@@ -68,24 +116,7 @@ const MembersPage = () => {
                 </h2>
                 <div className="flex flex-wrap -m-2">
                   {mem.members.map((mem, index) => {
-                    return (
-                      <div
-                        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 m-2 py-4 rounded-md"
-                        key={index}
-                      >
-                        <div className="flex flex-row space-x-4 items-center">
-                          <img
-                            className="rounded-full aspect-square object-cover object-center w-1/2"
-                            src={mem.src}
-                            alt={mem.name}
-                          />
-                          <div className="flex flex-col">
-                            <h3 className="text-xl font-medium">{mem.name}</h3>
-                            <p className="text-gray-600">{mem.role}</p>
-                          </div>
-                        </div>
-                      </div>
-                    );
+                    return memberElement(mem, index);
                   })}
                 </div>
               </div>

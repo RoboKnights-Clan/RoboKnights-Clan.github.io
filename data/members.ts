@@ -31,6 +31,32 @@ export const members = [
         name: "Shashwat Raj",
         role: "Senior Member",
         src: "/images/members/Shashwat.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://instagram.com/shash.is.fine/"
+          },
+          {
+            type: "github",
+            url: "https://github.com/darthvader58"
+          },
+          {
+            type: "behance",
+            url: "https://www.behance.net/shashwatraj1"
+          },
+          {
+            type: "medium",
+            url: "https://shashwatraj.medium.com/"
+          },
+          {
+            type: "youtube",
+            url: "https://m.youtube.com/channel/UCzHzQ0ssp26IMFIW-ZTrARA"
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/shashwat-raj-948b431b0"
+          }
+        ]
       },
       {
         name: "Aniket Negi",
@@ -101,6 +127,12 @@ export const members = [
         name: "Adi Mathur",
         role: "Senior Member",
         src: "/images/members/Adi.png",
+        socials: [
+          {
+            type: "github",
+            url: "https://github.com/IDoEverything"
+          }
+        ]
       },
       {
         name: "Bhavya Verma",
