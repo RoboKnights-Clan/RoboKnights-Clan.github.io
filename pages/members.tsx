@@ -1,7 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import { members } from "../data/members";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaBehance, FaMedium, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaBehance,
+  FaMedium,
+  FaYoutube,
+} from "react-icons/fa";
 
 const MembersPage = () => {
   let [shownMembers, setMembers] = React.useState(members);
@@ -37,37 +45,46 @@ const MembersPage = () => {
           <div className="flex flex-col">
             <h3 className="text-xl font-medium">{mem.name}</h3>
             <p className="text-gray-600">{mem.role}</p>
-            <div className="flex flex-row space-x-2 my-2 flex-wrap">
-          {mem.socials ? mem.socials.map((social: any, index: number) => { return(<a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black text-xl"
-                >
-                  {
-                    social.type == "github" ?
-                    <FaGithub /> : 
-                    social.type == "instagram" ?
-                    <FaInstagram /> :
-                    social.type == "facebook" ?
-                    <FaFacebook /> :
-                    social.type == "behance" ?
-                    <FaBehance /> : 
-                    social.type == "medium" ?
-                    <FaMedium /> :
-                    social.type == "youtube" ?
-                    <FaYoutube /> :
-                    social.type == "linkedin" ?
-                    <FaLinkedin /> : <></>
-                  }
-                </a>) }) : <></>}
-          </div>
+            <div className="flex space-x-1 my-2 flex-row">
+              {mem.socials ? (
+                mem.socials.map((social: any, index: number) => {
+                  return (
+                    <a
+                      key={index}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black text-xl"
+                    >
+                      {social.type == "github" ? (
+                        <FaGithub />
+                      ) : social.type == "instagram" ? (
+                        <FaInstagram />
+                      ) : social.type == "facebook" ? (
+                        <FaFacebook />
+                      ) : social.type == "behance" ? (
+                        <FaBehance />
+                      ) : social.type == "medium" ? (
+                        <FaMedium />
+                      ) : social.type == "youtube" ? (
+                        <FaYoutube />
+                      ) : social.type == "linkedin" ? (
+                        <FaLinkedin />
+                      ) : (
+                        <></>
+                      )}
+                    </a>
+                  );
+                })
+              ) : (
+                <></>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <Layout title="Members">

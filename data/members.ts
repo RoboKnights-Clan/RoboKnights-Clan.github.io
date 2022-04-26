@@ -34,29 +34,29 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://instagram.com/shash.is.fine/"
+            url: "https://instagram.com/shash.is.fine/",
           },
           {
             type: "github",
-            url: "https://github.com/darthvader58"
+            url: "https://github.com/darthvader58",
           },
           {
             type: "behance",
-            url: "https://www.behance.net/shashwatraj1"
+            url: "https://www.behance.net/shashwatraj1",
           },
           {
             type: "medium",
-            url: "https://shashwatraj.medium.com/"
+            url: "https://shashwatraj.medium.com/",
           },
           {
             type: "youtube",
-            url: "https://m.youtube.com/channel/UCzHzQ0ssp26IMFIW-ZTrARA"
+            url: "https://m.youtube.com/channel/UCzHzQ0ssp26IMFIW-ZTrARA",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/shashwat-raj-948b431b0"
-          }
-        ]
+            url: "https://www.linkedin.com/in/shashwat-raj-948b431b0",
+          },
+        ],
       },
       {
         name: "Aniket Negi",
@@ -122,6 +122,20 @@ export const members = [
         name: "Garv Jain",
         role: "Senior Member",
         src: "/images/members/Garv.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/_garv03/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/GarvJain03",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/garv-jain-907aa6218/",
+          },
+        ],
       },
       {
         name: "Adi Mathur",
@@ -130,9 +144,9 @@ export const members = [
         socials: [
           {
             type: "github",
-            url: "https://github.com/IDoEverything"
-          }
-        ]
+            url: "https://github.com/IDoEverything",
+          },
+        ],
       },
       {
         name: "Bhavya Verma",
