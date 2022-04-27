@@ -45,7 +45,7 @@ const MembersPage = () => {
           <div className="flex flex-col">
             <h3 className="text-xl font-medium text-dark font-sanssm">{mem.name}</h3>
             <p className="text-gray-600">{mem.role}</p>
-            <div className="flex space-x-1 my-2 flex-row">
+            <div className="grid-cols-4 inline-grid grid-flow-row">
               {mem.socials ? (
                 mem.socials.map((social: any, index: number) => {
                   return (
