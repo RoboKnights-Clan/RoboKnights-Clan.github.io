@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             <a className="text-2xl font-medium text-dark dark:text-white">
               {" "}
               <svg
-                className="w-16 h-16"
+                className="w-20 h-20"
                 viewBox="0 0 128 99"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,11 +69,6 @@ const Header: React.FC = () => {
             {showNavbar ? <ImCross /> : <GiHamburgerMenu />}
           </button>
           <div className="hidden space-x-12 lg:ml-auto lg:flex lg:items-center">
-            <button
-              aria-label="Toggle Dark Mode"
-              className="px-5"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            ><img src="/images/mode.png" width={50} height={50} className="invert dark:invert-0"></img></button>
             {links.map((link) => (
               <Link key={link.name} href={link.url}>
                 <a
@@ -87,6 +82,11 @@ const Header: React.FC = () => {
                 </a>
               </Link>
             ))}
+            <button
+              aria-label="Toggle Dark Mode"
+              className="px-5"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
           </div>
         </div>
         {showNavbar && (
@@ -98,6 +98,11 @@ const Header: React.FC = () => {
                 </a>
               </Link>
             ))}
+            <button
+              aria-label="Toggle Dark Mode"
+              className="px-5"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
           </div>
         )}
       </header>
