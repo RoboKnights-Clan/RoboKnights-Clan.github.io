@@ -65,13 +65,13 @@ const Header: React.FC = () => {
           >
             {showNavbar ? <ImCross /> : <GiHamburgerMenu />}
           </button>
-          <div className="hidden space-x-6 lg:ml-auto lg:flex lg:items-center">
+          <div className="hidden space-x-12 lg:ml-auto lg:flex lg:items-center">
             {links.map((link) => (
               <Link key={link.name} href={link.url}>
                 <a
                   className={`text-md font-normal text-dark ${
                     router.pathname === `${link.url}`
-                      ? "underline underline-offset-4 decoration-4"
+                      ? "underline underline-offset-4 decoration-2"
                       : ""
                   }`}
                 >
