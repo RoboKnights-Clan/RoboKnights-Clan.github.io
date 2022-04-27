@@ -59,19 +59,19 @@ const MembersPage = () => {
                       className="text-dark text-xl"
                     >
                       {social.type == "github" ? (
-                        <FaGithub fill={theme == "light" ? "black" : "white"}/>
+                        <FaGithub fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "instagram" ? (
-                        <FaInstagram fill={theme == "light" ? "black" : "white"}/>
+                        <FaInstagram fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "facebook" ? (
-                        <FaFacebook fill={theme == "light" ? "black" : "white"}/>
+                        <FaFacebook fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "behance" ? (
-                        <FaBehance fill={theme == "light" ? "black" : "white"}/>
+                        <FaBehance fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "medium" ? (
-                        <FaMedium fill={theme == "light" ? "black" : "white"}/>
+                        <FaMedium fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "youtube" ? (
-                        <FaYoutube fill={theme == "light" ? "black" : "white"}/>
+                        <FaYoutube fill={theme == "dark" ? "white" : "black"}/>
                       ) : social.type == "linkedin" ? (
-                        <FaLinkedin fill={theme == "light" ? "black" : "white"}/>
+                        <FaLinkedin fill={theme == "dark" ? "white" : "black"}/>
                       ) : (
                         <></>
                       )}
