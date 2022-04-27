@@ -61,7 +61,7 @@ const Header: React.FC = () => {
           </Link>
           <button
             onClick={handleToggle}
-            className="ml-auto flex items-center space-x-6 text-2xl text-dark lg:hidden"
+            className="ml-auto flex items-center space-x-8 text-2xl text-dark lg:hidden"
           >
             {showNavbar ? <ImCross /> : <GiHamburgerMenu />}
           </button>
