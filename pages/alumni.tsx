@@ -25,10 +25,10 @@ const AlumniPage = () => {
     <Layout title="Alumni">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 font-sanssm">
+          <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 dark:text-white font-sanssm">
             Alumni
           </h1>
-          <p className="lg:w-2/3 leading-relaxed text-base mb-8">
+          <p className="lg:w-2/3 leading-relaxed text-base mb-8 dark:text-gray-400">
             Roboknights has an extensive, well connected alumni network which
             guides and mentors its members into the right path.
           </p>
@@ -55,7 +55,7 @@ const AlumniPage = () => {
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white"
                 placeholder="Search"
                 onInput={onSearchBarChange}
               />
@@ -67,19 +67,19 @@ const AlumniPage = () => {
           .map((alum, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-dark text-3xl pb-6 font-medium pt-12"}>
+                <h2 className={"text-dark dark:text-gray-300 text-3xl pb-6 font-medium pt-12"}>
                   {alum.batch}
                 </h2>
                 <div className="flex flex-wrap -m-2">
                   {alum.people.map((alum, index) => {
                     return (
                       <div className="p-2 lg:w-1/5 md:w-1/2 w-full" key={index}>
-                        <div className="h-32 flex items-center border-black rounded-md border-2 p-4">
+                        <div className="h-32 flex items-center border-black dark:border-white rounded-md border-2 p-4">
                           <div className="flex-grow p-5">
-                            <h2 className="text-gray-900 font-sanssm font-medium text-xl">
+                            <h2 className="text-gray-900 dark:text-white font-sanssm font-medium text-xl">
                               {alum.name}
                             </h2>
-                            <p className="text-gray-500">{alum.role}</p>
+                            <p className="text-gray-500 dark:text-gray-200">{alum.role}</p>
                           </div>
                         </div>
                       </div>
