@@ -10,9 +10,11 @@ import {
   FaMedium,
   FaYoutube,
 } from "react-icons/fa";
+import { useTheme } from "next-themes";
 
 const MembersPage = () => {
   let [shownMembers, setMembers] = React.useState(members);
+  let {theme, setTheme} = useTheme();
 
   const onSearchBarChange = () => {
     const input = document.getElementById("search") as HTMLInputElement;
@@ -33,7 +35,7 @@ const MembersPage = () => {
   const memberElement = (mem: any, index: number) => {
     return (
       <div
-        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black px-3 m-2 py-4 rounded-md"
+        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
         key={index}
       >
         <div className="flex flex-row space-x-4 items-center">
@@ -43,8 +45,8 @@ const MembersPage = () => {
             alt={mem.name}
           />
           <div className="flex flex-col">
-            <h3 className="text-xl font-medium text-dark font-sanssm">{mem.name}</h3>
-            <p className="text-gray-600">{mem.role}</p>
+            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">{mem.name}</h3>
+            <p className="text-gray-600 dark:text-gray-200">{mem.role}</p>
             <div className="grid-cols-4 inline-grid grid-flow-row">
               {mem.socials ? (
                 mem.socials.map((social: any, index: number) => {
@@ -57,19 +59,19 @@ const MembersPage = () => {
                       className="text-dark text-xl"
                     >
                       {social.type == "github" ? (
-                        <FaGithub />
+                        <FaGithub fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "instagram" ? (
-                        <FaInstagram />
+                        <FaInstagram fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "facebook" ? (
-                        <FaFacebook />
+                        <FaFacebook fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "behance" ? (
-                        <FaBehance />
+                        <FaBehance fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "medium" ? (
-                        <FaMedium />
+                        <FaMedium fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "youtube" ? (
-                        <FaYoutube />
+                        <FaYoutube fill={theme == "light" ? "black" : "white"}/>
                       ) : social.type == "linkedin" ? (
-                        <FaLinkedin />
+                        <FaLinkedin fill={theme == "light" ? "black" : "white"}/>
                       ) : (
                         <></>
                       )}
@@ -90,7 +92,7 @@ const MembersPage = () => {
     <Layout title="Members">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark font-sanssm">
+          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-white font-sanssm">
             Members
           </h1>
           <div className="container">
@@ -116,7 +118,7 @@ const MembersPage = () => {
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white"
                 placeholder="Search"
                 onInput={onSearchBarChange}
               />
@@ -128,7 +130,7 @@ const MembersPage = () => {
           .map((mem, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-dark font-medium text-3xl pb-6 pt-12 font-sansm"}>
+                <h2 className={"text-dark dark:text-gray-200 font-medium text-3xl pb-6 pt-12 font-sansm"}>
                   {mem.year}
                 </h2>
                 <div className="flex flex-wrap -m-2">

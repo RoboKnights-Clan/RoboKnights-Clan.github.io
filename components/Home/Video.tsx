@@ -3,7 +3,7 @@ import React from "react";
 const Video = () => {
   return (
     <div className="flex items-center flex-col space-y-8 py-24 justify-center">
-      <h1 className="font-medium sm:text-4xl text-3xl text-dark font-sansm">
+      <h1 className="font-medium sm:text-4xl text-3xl text-dark dark:text-white font-sansm">
         Celebrating 20 Years of RK Video
       </h1>
       <iframe

@@ -15,7 +15,9 @@ const Layout: React.FC<IlayoutProps> = ({ title, children }: IlayoutProps) => {
         <title>{title} | RoboKnights</title>
       </Head>
       <Header />
-      {children}
+      <div className="dark:bg-dark dark:text-white">
+        {children}
+      </div>
       <Footer />
     </>
   );

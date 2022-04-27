@@ -12,8 +12,10 @@ module.exports = {
       },
       colors: {
         dark: "#242424",
+        footerdark: "#101010"
       },
     },
   },
   plugins: [],
+  darkMode: 'class'
 };
