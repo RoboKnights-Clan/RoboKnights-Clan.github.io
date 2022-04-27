@@ -14,7 +14,7 @@ import { useTheme } from "next-themes";
 
 const MembersPage = () => {
   let [shownMembers, setMembers] = React.useState(members);
-  let {theme, setTheme} = useTheme();
+  let { theme, setTheme } = useTheme();
 
   const onSearchBarChange = () => {
     const input = document.getElementById("search") as HTMLInputElement;
@@ -45,7 +45,9 @@ const MembersPage = () => {
             alt={mem.name}
           />
           <div className="flex flex-col">
-            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">{mem.name}</h3>
+            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
+              {mem.name}
+            </h3>
             <p className="text-gray-600 dark:text-gray-200">{mem.role}</p>
             <div className="grid-cols-4 inline-grid grid-flow-row">
               {mem.socials ? (
@@ -59,19 +61,25 @@ const MembersPage = () => {
                       className="text-dark text-xl"
                     >
                       {social.type == "github" ? (
-                        <FaGithub fill={theme == "dark" ? "white" : "black"}/>
+                        <FaGithub fill={theme == "dark" ? "white" : "black"} />
                       ) : social.type == "instagram" ? (
-                        <FaInstagram fill={theme == "dark" ? "white" : "black"}/>
+                        <FaInstagram
+                          fill={theme == "dark" ? "white" : "black"}
+                        />
                       ) : social.type == "facebook" ? (
-                        <FaFacebook fill={theme == "dark" ? "white" : "black"}/>
+                        <FaFacebook
+                          fill={theme == "dark" ? "white" : "black"}
+                        />
                       ) : social.type == "behance" ? (
-                        <FaBehance fill={theme == "dark" ? "white" : "black"}/>
+                        <FaBehance fill={theme == "dark" ? "white" : "black"} />
                       ) : social.type == "medium" ? (
-                        <FaMedium fill={theme == "dark" ? "white" : "black"}/>
+                        <FaMedium fill={theme == "dark" ? "white" : "black"} />
                       ) : social.type == "youtube" ? (
-                        <FaYoutube fill={theme == "dark" ? "white" : "black"}/>
+                        <FaYoutube fill={theme == "dark" ? "white" : "black"} />
                       ) : social.type == "linkedin" ? (
-                        <FaLinkedin fill={theme == "dark" ? "white" : "black"}/>
+                        <FaLinkedin
+                          fill={theme == "dark" ? "white" : "black"}
+                        />
                       ) : (
                         <></>
                       )}
@@ -130,15 +138,11 @@ const MembersPage = () => {
           .map((mem, index) => {
             return (
               <div key={index}>
-<<<<<<< HEAD
                 <h2
                   className={
-                    "text-dark font-medium text-3xl pb-6 pt-12 font-sansm"
+                    "text-dark dark:text-gray-200 font-medium text-3xl pb-6 pt-12 font-sansm"
                   }
                 >
-=======
-                <h2 className={"text-dark dark:text-gray-200 font-medium text-3xl pb-6 pt-12 font-sansm"}>
->>>>>>> 4a0323a2e60eaef84461b8ef47c3cca0e2acdff2
                   {mem.year}
                 </h2>
                 <div className="flex flex-wrap -m-2">
