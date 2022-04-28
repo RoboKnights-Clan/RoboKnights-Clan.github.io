@@ -14,12 +14,12 @@ const Modal = () => {
           Celebrating 20 Years of RK Video
         </h1>
         <img
-          src="https://media.discordapp.net/attachments/855442145916616724/968891577848180857/sddefault.jpg"
+          src="/images/videos/20_years_of_rk.jpg"
           className="rounded-t-md lg:w-1/2"
           alt="thumbnail"
         />
         <button
-          className="bg-black text-white lg:w-1/2 py-4 w-full text-xl rounded-b-md"
+          className="bg-black font-bold text-white lg:w-1/2 py-4 w-full text-xl rounded-b-md"
           onClick={() => setOpen(true)}
         >
           Play
