@@ -28,7 +28,7 @@ const Modal = () => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="LmK33VtXm18"
+          videoId="Eeq6bW3pbOI"
           onClose={() => setOpen(false)}
         />
       </div>
