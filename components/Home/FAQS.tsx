@@ -18,8 +18,8 @@ const FAQS: React.FC<{
                 key={index}
                 className="p-4 border-b-2 border-black dark:border-white"
               >
-                <div className="border-dark flex items-center">
-                  <h2 className="font-medium sm:text-xl text-lg text-dark dark:text-white font-sansm">
+                <div className="border-dark flex items-center justify-between">
+                  <h2 className="font-medium text-lg w-10/12 text-dark dark:text-white font-sansm">
                     {faq.question}
                   </h2>
                   {open === index ? (
@@ -28,7 +28,7 @@ const FAQS: React.FC<{
                         setOpen({});
                       }}
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-10 w-10 ml-auto border-2 rounded-full font-bold text-dark dark:text-white border-black dark:border-white p-2"
+                      className="h-10 w-10 font-bold cursor-pointer text-dark dark:text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -46,7 +46,7 @@ const FAQS: React.FC<{
                         setOpen(index);
                       }}
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-10 w-10 ml-auto border-2 rounded-full font-bold text-dark dark:text-white border-black dark:border-white p-2"
+                      className="h-10 w-10 font-bold cursor-pointer text-dark dark:text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
