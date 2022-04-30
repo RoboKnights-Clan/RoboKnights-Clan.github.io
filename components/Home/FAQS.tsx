@@ -14,8 +14,8 @@ const FAQS: React.FC<{
         {Object.keys(FAQData).map((key) => {
           return FAQData["FaqData"].map((faq, index) => {
             return (
-              <section className="p-4 border-b-2 border-black">
-                <div key={index} className="border-dark flex items-center">
+              <section key={index} className="p-4 border-b-2 border-black">
+                <div className="border-dark flex items-center">
                   <h2 className="font-medium sm:text-xl text-lg text-dark dark:text-white font-sansm">
                     {faq.question}
                   </h2>
