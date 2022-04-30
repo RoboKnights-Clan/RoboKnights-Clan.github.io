@@ -25,10 +25,10 @@ const AlumniPage = () => {
     <Layout title="Alumni">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 dark:text-white font-sanssm">
+          <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 dark:text-gray-e9 font-sanssm">
             Alumni
           </h1>
-          <p className="lg:w-2/3 leading-relaxed text-base mb-8 dark:text-gray-400">
+          <p className="lg:w-2/3 leading-relaxed text-base mb-8 dark:text-gray-bf">
             Roboknights has an extensive, well connected alumni network which
             guides and mentors its members into the right path.
           </p>
@@ -55,8 +55,8 @@ const AlumniPage = () => {
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white"
-                placeholder="Search"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white text-gray-bf"
+                placeholder="Search alumni"
                 onInput={onSearchBarChange}
               />
             </div>
@@ -79,7 +79,7 @@ const AlumniPage = () => {
                             <h2 className="text-gray-900 dark:text-white font-sanssm font-medium text-xl">
                               {alum.name}
                             </h2>
-                            <p className="text-gray-500 dark:text-gray-200">{alum.role}</p>
+                            <p className="text-gray-500 dark:text-gray-e9">{alum.role}</p>
                           </div>
                         </div>
                       </div>

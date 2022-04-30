@@ -10,7 +10,7 @@ const Modal = () => {
   return (
     <>
       <div className="flex items-center flex-col py-24 justify-center">
-        <h1 className="font-medium sm:text-4xl text-center text-3xl pb-8 text-dark font-sansm">
+        <h1 className="font-medium sm:text-4xl text-center text-3xl pb-8 text-dark dark:text-white font-sansm">
           Celebrating 20 Years of RK Video
         </h1>
         <img

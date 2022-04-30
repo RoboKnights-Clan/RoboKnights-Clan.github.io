@@ -7,10 +7,10 @@ const ResourcesPage = () => {
     <Layout title="Resources">
       <div className="container mx-auto md:px-24 px-5 py-8">
         <div className="flex flex-col w-full mb-8">
-          <h1 className="sm:text-3xl text-2xl font-bold  mb-2 text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-bold  mb-2 text-gray-900 dark:text-white">
             Resources
           </h1>
-          <p className="lg:w-2/3 leading-relaxed text-base mb-4">
+          <p className="lg:w-2/3 leading-relaxed text-base mb-4 dark:text-gray-e9">
             We at RoboKnights not only focus on accolades and competitions but
             also thrive to help our fellow members and other enthusiasts out
             there to increase their knowledge in the growing field of robotics.
@@ -24,11 +24,11 @@ const ResourcesPage = () => {
               className="border-2 rounded-md border-black p-5 mb-4"
               key={index}
             >
-              <h1 className=" sm:text-2xl text-xl mb-2 font-semibold text-gray-900">
+              <h1 className=" sm:text-2xl text-xl mb-2 font-semibold text-gray-900 dark:text-white">
                 {resource.name}
               </h1>
-              <h2 className="mb-2 text-lg">{resource.date}</h2>
-              <p className="leading-relaxed text-base mb-2">{resource.desc}</p>
+              <h2 className="mb-2 text-lg dark:text-gray-cb">{resource.date}</h2>
+              <p className="leading-relaxed text-base mb-2 dark:text-gray-e9">{resource.desc}</p>
               <a href={resource.link} className="underline text-lg">
                 Read More
               </a>

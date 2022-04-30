@@ -48,7 +48,7 @@ const MembersPage = () => {
             <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
               {mem.name}
             </h3>
-            <p className="text-gray-600 dark:text-gray-200">{mem.role}</p>
+            <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
             <div className="grid-cols-4 inline-grid grid-flow-row">
               {mem.socials ? (
                 mem.socials.map((social: any, index: number) => {
@@ -100,7 +100,7 @@ const MembersPage = () => {
     <Layout title="Members">
       <div className="container mx-auto md:px-24 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-white font-sanssm">
+          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-gray-e9 font-sanssm">
             Members
           </h1>
           <div className="container">
@@ -121,13 +121,13 @@ const MembersPage = () => {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-                <i className="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>{" "}
+                <i className="fa fa-search text-gray-bf z-20 hover:text-gray-500"></i>{" "}
               </div>{" "}
               <input
                 id="search"
                 type="text"
-                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white"
-                placeholder="Search"
+                className="h-14 w-60 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white text-gray-bf"
+                placeholder="Search members"
                 onInput={onSearchBarChange}
               />
             </div>
@@ -140,7 +140,7 @@ const MembersPage = () => {
               <div key={index}>
                 <h2
                   className={
-                    "text-dark dark:text-gray-200 font-medium text-3xl pb-6 pt-12 font-sansm"
+                    "text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12 font-sansm"
                   }
                 >
                   {mem.year}

@@ -14,6 +14,10 @@
     font-family: "WSans-Medium";
     src: url("../public/fonts/WorkSans-Medium.ttf");
 }
+@font-face {
+    font-family: "WSans-Light";
+    src: url("../public/fonts/WorkSans-Light.ttf");
+}
 
 body {
     font-family: 'WorkSans'

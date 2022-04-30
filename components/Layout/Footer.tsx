@@ -34,9 +34,9 @@ const Footer = () => {
           <h5 className="font-bold mb-2.5 text-lg text-white w-full font-sanssm">
             Get in Touch
           </h5>
-          <p className="text-white">Delhi Public School, R. K. Puram</p>
-          <p className="text-white w-full mt-2"> roboknights@dpsrkp.net</p>
-          <p className="text-white w-full mt-2">ajithkumarkg@dpsrkp.net</p>
+          <p className="text-gray-e5">Delhi Public School, R. K. Puram</p>
+          <p className="text-gray-e5 w-full mt-2"> roboknights@dpsrkp.net</p>
+          <p className="text-gray-e5 w-full mt-2">ajithkumarkg@dpsrkp.net</p>
         </div>
 
         <div className="mb-6 lg:pr-12 sm:mx-auto flex flex-col items-center justify-center">
@@ -51,7 +51,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-xl"
+                  className="text-gray-e5 text-xl"
                 >
                   {social.icon}
                 </a>
@@ -63,18 +63,11 @@ const Footer = () => {
         <div className="mb-6">
           <h5 className="font-bold mb-2.5 text-lg text-white font-sanssm">Links</h5>
           <div className="flex flex-col space-y-1">
-            {links.map((link, index) => {
-              return (
-                <Link key={index} href={link.url}>
-                  <a className="text-white">{link.name}</a>
-                </Link>
-              );
-            })}
             <Link href="/resources">
-              <a className="text-white">Resources</a>
+              <a className="text-gray-e5">Resources</a>
             </Link>
             <Link href="/blog">
-              <a className="text-white">Blog</a>
+              <a className="text-gray-e5">Blog</a>
             </Link>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm dark:text-white">
           RoboKnights
         </h1>
-        <p className="mb-8 leading-relaxed dark:text-g">
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
           The Robotics Club of Delhi Public School R.K. Puram
         </p>
         <div className="flex justify-center">
