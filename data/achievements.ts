@@ -109,4 +109,11 @@ export const achievements = [
     year: "2020",
     prize: "Token of appreciation",
   },
+   {
+    competition:
+      "P.R.A.I.S.E event of Elysium by IIITD, held virtually",
+    level: "National",
+    year: "2020",
+    prize: "Winners",
+  },
 ];
