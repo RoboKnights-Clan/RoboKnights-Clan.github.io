@@ -35,7 +35,7 @@ const MembersPage = () => {
   const memberElement = (mem: any, index: number) => {
     return (
       <div
-        className="p-2 lg:w-1/4 md:w-1/2 w-full border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
+        className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
         key={index}
       >
         <div className="flex flex-row space-x-4 items-center">
@@ -98,7 +98,7 @@ const MembersPage = () => {
 
   return (
     <Layout title="Members">
-      <div className="container mx-auto md:px-24 px-5 py-12">
+      <div className="container mx-auto md:px-10 px-5 py-12">
         <div className="flex flex-col w-full">
           <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-gray-e9 font-sanssm">
             Members
@@ -145,7 +145,7 @@ const MembersPage = () => {
                 >
                   {mem.year}
                 </h2>
-                <div className="flex flex-wrap -m-2">
+                <div className="grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 grid-cols-1 -m-2">
                   {mem.members.map((mem, index) => {
                     return memberElement(mem, index);
                   })}
