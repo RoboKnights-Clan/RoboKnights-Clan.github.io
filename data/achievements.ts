@@ -102,4 +102,11 @@ export const achievements = [
     year: "2021",
     prize: "Finalist",
   },
+    {
+    competition:
+      "Ideathon Challenge event of National Road Safety Month by the Government of India, held virtually",
+    level: "National",
+    year: "2020",
+    prize: "Token of appreciation",
+  },
 ];
