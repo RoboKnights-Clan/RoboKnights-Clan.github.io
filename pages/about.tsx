@@ -12,7 +12,7 @@ const AboutPage = () => {
           <h1 className=" sm:text-4xl text-3xl mb-4 font-bold text-dark dark:text-white">
             About
           </h1>
-          <p className="mb-8 leading-relaxed text-justify font-sansl">
+          <p className="mb-8 leading-relaxed text-justify font-sans">
             RoboKnights, founded in 2002, is the Robotics Club of DPS R. K.
             Puram, and one of the well known robotics clubs in India. The club
             strives to stimulate interest in robotics among the high school
@@ -47,7 +47,7 @@ const AboutPage = () => {
                 <h1 className=" sm:text-xl text-lg mb-4 font-medium text-gray-cb dark:text-gray-300 dark:text-grey">
                   {item.role}
                 </h1>
-                <p className="mb-8 leading-relaxed text-justify text-dark dark:text-gray-e9 font-sansl">{item.desc}</p>
+                <p className="mb-8 leading-relaxed text-justify text-dark dark:text-gray-e9 font-sans">{item.desc}</p>
               </div>
               <div className="w-72">
                 <img
