@@ -21,14 +21,18 @@ const ResourcesPage = () => {
         <div className="flex flex-col">
           {resources.map((resource, index) => (
             <div
-              className="border-2 rounded-md border-black p-5 mb-4"
+              className="border-2 rounded-md border-black dark:border-white p-5 mb-4"
               key={index}
             >
               <h1 className=" sm:text-2xl text-xl mb-2 font-semibold text-gray-900 dark:text-white">
                 {resource.name}
               </h1>
-              <h2 className="mb-2 text-lg dark:text-gray-cb">{resource.date}</h2>
-              <p className="leading-relaxed text-base mb-2 dark:text-gray-e9">{resource.desc}</p>
+              <h2 className="mb-2 text-lg dark:text-gray-cb">
+                {resource.date}
+              </h2>
+              <p className="leading-relaxed text-base mb-2 dark:text-gray-e9">
+                {resource.desc}
+              </p>
               <a href={resource.link} className="underline text-lg">
                 Read More
               </a>
