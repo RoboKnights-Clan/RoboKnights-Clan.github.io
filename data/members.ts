@@ -111,7 +111,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 10 (2021-22)",
+    year: "Class 11 (2022-23)",
     members: [
       {
         name: "Tanishq Gogia",
