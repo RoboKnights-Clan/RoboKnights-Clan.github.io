@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             <a className="text-2xl font-medium text-dark dark:text-white">
               {" "}
               <svg
-                className="w-20 h-20"
+                className="md:w-20 md:h-20 w-12 h-12"
                 viewBox="0 0 128 99"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,15 @@ const Header: React.FC = () => {
             onClick={handleToggle}
             className="ml-auto flex items-center space-x-8 text-2xl text-dark dark:text-white lg:hidden"
           >
-            {showNavbar ? <ImCross /> : <GiHamburgerMenu />}
+            {showNavbar ? <ImCross /> : 
+            <>
+            <button
+              aria-label="Toggle Dark Mode"
+              className="px-5"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
+            <GiHamburgerMenu />
+            </>}
           </button>
           <div className="hidden space-x-12 lg:ml-auto lg:flex lg:items-center">
             {links.map((link) => (
@@ -98,11 +106,6 @@ const Header: React.FC = () => {
                 </a>
               </Link>
             ))}
-            <button
-              aria-label="Toggle Dark Mode"
-              className="px-5"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
           </div>
         )}
       </header>
