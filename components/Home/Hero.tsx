@@ -18,9 +18,11 @@ const Hero = () => {
               Resources
             </a>
           </Link>
-          <button className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
-            Blogs
-          </button>
+          <Link href="/blogs" passHref>
+            <a className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
+              Blogs
+            </a>
+          </Link>
         </div>
       </div>
       <div className="md:w-1/2 w-full">

@@ -9,7 +9,7 @@ module.exports = {
         sans: ["WorkSans", "sans-serif"],
         sansm: ["WSans-Medium", "sans-serif"],
         sanssm: ["WSans-SemiBold", "sans-serif"],
-        sansl: ["WSans-Light", "sans-serif"]
+        sansl: ["WSans-Light", "sans-serif"],
       },
       colors: {
         dark: "#242424",
@@ -21,10 +21,10 @@ module.exports = {
           cb: "#cbcbcb",
           bf: "#bfbfbf",
           db: "#dbdbdb",
-        }
+        },
       },
     },
   },
-  plugins: [],
-  darkMode: 'class'
+  plugins: [require("@tailwindcss/typography")],
+  darkMode: "class",
 };

@@ -61,12 +61,14 @@ const Footer = () => {
         </div>
 
         <div className="mb-6">
-          <h5 className="font-bold mb-2.5 text-lg text-white font-sanssm">Links</h5>
+          <h5 className="font-bold mb-2.5 text-lg text-white font-sanssm">
+            Links
+          </h5>
           <div className="flex flex-col space-y-1">
             <Link href="/resources">
               <a className="text-gray-e5">Resources</a>
             </Link>
-            <Link href="/blog">
+            <Link href="/blogs">
               <a className="text-gray-e5">Blog</a>
             </Link>
           </div>
