@@ -111,7 +111,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 10 (2021-22)",
+    year: "Class 11 (2022-23)",
     members: [
       {
         name: "Tanishq Gogia",
@@ -196,7 +196,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 9",
+    year: "Class 9 (2022-23)",
     members: [
       {
         name: "Yuvraj Matta",
@@ -211,7 +211,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 8",
+    year: "Class 8 (2022-23)",
     members: [
       {
         name: "Neil Sindwani",
