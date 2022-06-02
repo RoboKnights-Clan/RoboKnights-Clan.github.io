@@ -9,6 +9,7 @@ import {
   FaBehance,
   FaMedium,
   FaYoutube,
+  FaSpotify,
 } from "react-icons/fa";
 import { useTheme } from "next-themes";
 
@@ -80,7 +81,12 @@ const MembersPage = () => {
                         <FaLinkedin
                           className="fill-black dark:fill-white"
                         />
-                      ) : (
+                      ) : social.type == "spotify" ? (
+                        <FaSpotify
+                          className="fill-black dark:fill-white"
+                        />
+                      ) : 
+                      (
                         <></>
                       )}
                     </a>
