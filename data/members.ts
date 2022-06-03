@@ -144,18 +144,6 @@ export const members = [
             url: "https://github.com/Great-Pixel120"
           },
           {
-            type: "facebook",
-            url: "https://www.facebook.com/GreatPixel120/"
-          },
-          {
-            type: "medium",
-            url: "https://medium.com/@dagaayush1205"
-          },
-          {
-            type: "youtube",
-            url: "https://www.youtube.com/channel/UCymzQR3xxXmLeN3rgd8grug"
-          },
-          {
             type: "linkedin",
             url: "https://www.linkedin.com/in/ayush-daga-341045226/"
           }
