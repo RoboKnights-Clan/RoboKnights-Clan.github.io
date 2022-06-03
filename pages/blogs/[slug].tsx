@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
 import Layout from "../../components/Layout/Layout";
 import type { NextPage } from "next";
 
@@ -15,7 +16,15 @@ const Blog: NextPage = ({
     <Layout title={title}>
       <div className="container mx-auto lg:px-24 px-5 py-12">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-8">{title}</h2>
+          <h2 className="text-3xl space-x-4 flex font-bold mb-8">
+            {" "}
+            <Link href="/blogs">
+              <a>
+                <FaArrowLeft />
+              </a>
+            </Link>{" "}
+            <span>{title}</span>
+          </h2>
           <h2 className="text-xl font-bold">
             Posted on {date} by {author}
           </h2>
