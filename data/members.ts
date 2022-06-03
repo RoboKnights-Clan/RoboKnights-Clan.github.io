@@ -282,10 +282,6 @@ export const members = [
           {
             type: "github",
             url: "https://github.com/SilverBullet2005"
-          },
-          {
-            type: "spotify",
-            url: "https://open.spotify.com/user/bqttaszkwlv0mdjaawt9gc3tf"
           }
         ]
       },
