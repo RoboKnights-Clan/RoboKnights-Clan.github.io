@@ -376,10 +376,6 @@ export const members = [
         src: "/images/members/Agastya.jpg",
         socials: [
           {
-            type: "instagram",
-            url: "https://www.instagram.com/anonymous_iceman101/"
-          },
-          {
             type: "youtube",
             url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ"
           },
