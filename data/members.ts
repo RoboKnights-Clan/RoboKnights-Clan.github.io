@@ -345,7 +345,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/ayush-daga-341045226/"
+            url: "https://www.linkedin.com/in/yuvraj-matta-131764220"
           }
         ]
       },
