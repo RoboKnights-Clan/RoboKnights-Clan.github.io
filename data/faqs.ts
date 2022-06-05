@@ -33,7 +33,7 @@ export const FAQS = [
   {
     question: "Will the questions be hard?",
     answer:
-      "The difficulty level of the questions in the induction process is variable. The questions will be mostly from what has been taught in the resources and would also require some extra research to gather the required knowledge. Attempting all questions or all assignments is not compulsory.",
+      "The difficulty level of each question in the assignment varies. Attempting all the questions is not compulsory. The majority of the questions will be based on the information provided in the resources. Some additional self-research by the inductees may be required.",
   },
   {
     question: "Will there be practicals held in this club?",
