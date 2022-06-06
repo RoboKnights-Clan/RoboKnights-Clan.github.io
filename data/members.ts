@@ -133,7 +133,7 @@ export const members = [
       {
         name: "Ayush Daga",
         role: "Senior Member",
-        src: "https://media.discordapp.net/attachments/888667530959417345/892729445000020028/IMG_3954-1.jpg?width=670&height=670",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/982268104887394344/IMG-20210929-WA0006.jpg?width=670&height=670",
         socials: [
           {
             type: "instagram",
@@ -345,7 +345,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/ayush-daga-341045226/"
+            url: "https://www.linkedin.com/in/yuvraj-matta-131764220"
           }
         ]
       },
