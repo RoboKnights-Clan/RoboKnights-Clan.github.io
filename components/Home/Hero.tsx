@@ -29,7 +29,7 @@ const Hero = () => {
         <img
           className="object-cover object-center rounded"
           alt="hero"
-          src="/images/index_hero.svg"
+          src="/images/hero.png"
         />
       </div>
     </div>
