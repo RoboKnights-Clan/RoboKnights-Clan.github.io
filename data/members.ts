@@ -171,7 +171,7 @@ export const members = [
         src: "/images/members/Ishaan.jpg",
       },
       {
-        name: "Yashas Gogna",
+        name: "Yashas Gogia",
         role: "Senior Member",
         src: "https://cdn.discordapp.com/attachments/753327283497992356/837730421264351392/Screenshot_20210430-220523__01.jpg",
         socials: [
