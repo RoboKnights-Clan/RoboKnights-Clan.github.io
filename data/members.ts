@@ -173,11 +173,11 @@ export const members = [
       {
         name: "Yashas Gogia",
         role: "Senior Member",
-        src: "https://cdn.discordapp.com/attachments/753327283497992356/837730421264351392/Screenshot_20210430-220523__01.jpg",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/984497912681725992/PHOTO.jpeg",
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/Yashas_gogna/"
+            url: "https://www.instagram.com/Yashas_gogia/"
           },
           {
             type: "github",
