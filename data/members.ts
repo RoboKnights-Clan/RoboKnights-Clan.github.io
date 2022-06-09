@@ -95,10 +95,6 @@ export const members = [
             url: "https://shashwatraj.medium.com/",
           },
           {
-            type: "youtube",
-            url: "https://m.youtube.com/channel/UCzHzQ0ssp26IMFIW-ZTrARA",
-          },
-          {
             type: "linkedin",
             url: "https://www.linkedin.com/in/shashwat-raj-948b431b0",
           },
