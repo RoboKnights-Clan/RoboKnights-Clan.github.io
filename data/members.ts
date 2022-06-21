@@ -95,10 +95,6 @@ export const members = [
             url: "https://shashwatraj.medium.com/",
           },
           {
-            type: "youtube",
-            url: "https://m.youtube.com/channel/UCzHzQ0ssp26IMFIW-ZTrARA",
-          },
-          {
             type: "linkedin",
             url: "https://www.linkedin.com/in/shashwat-raj-948b431b0",
           },
@@ -175,13 +171,13 @@ export const members = [
         src: "/images/members/Ishaan.jpg",
       },
       {
-        name: "Yashas Gogna",
+        name: "Yashas Gogia",
         role: "Senior Member",
-        src: "https://cdn.discordapp.com/attachments/753327283497992356/837730421264351392/Screenshot_20210430-220523__01.jpg",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/984497912681725992/PHOTO.jpeg",
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/Yashas_gogna/"
+            url: "https://www.instagram.com/Yashas_gogia/"
           },
           {
             type: "github",
