@@ -1,10 +1,5 @@
 export const videos = [
   {
-    name: "20 Years of RK",
-    image: "/images/videos/20_years_of_rk.jpg",
-    videoId: "Eeq6bW3pbOI",
-  },
-  {
     name: "Utkarsh Lal",
     image: "/images/videos/utkarsh.jpg",
     videoId: "ZkmiWVuijyg",

@@ -9,9 +9,14 @@ const Modal = ({ videoId, image, name }) => {
 
   return (
     <div>
-      <img src={image} className="rounded-t-md" alt="thumbnail" />
+      <img
+        src={image}
+        className="rounded-t-md lg:w-3/4 w-full cursor-pointer"
+        alt="thumbnail"
+        onClick={() => setOpen(true)}
+      />
       <button
-        className="bg-black font-bold text-white py-4 w-full text-xl rounded-b-md"
+        className="bg-black font-bold text-white py-4 w-3/4 text-xl rounded-b-md hover:bg-dark transition duration-200 ease-in-out"
         onClick={() => setOpen(true)}
       >
         {name}
