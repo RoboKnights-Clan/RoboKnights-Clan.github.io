@@ -1,0 +1,27 @@
+---
+title: "Rise and Fall of Analog"
+date: "June 29 2022"
+author: "Swarnika Bharadwaj and Ayush Daga"
+excerpt: "The first analog computer, then commonly known as ‘the tide predictor’, was made by Lord Kelvin in 1873. Dating back to as early as the nineteenth century, analog technology has a rich, vast history: one that not many know of. Being multipurpose devices, they once carried out crucial functions like tide prediction, eclipse prediction and guiding anti-aircraft guns, among many more."
+---
+
+The first analog computer, then commonly known as ‘the tide predictor’, was made by Lord Kelvin in 1873. Dating back to as early as the nineteenth century, analog technology has a rich, vast history: one that not many know of. Being multipurpose devices, they once carried out crucial functions like tide prediction, eclipse prediction and guiding anti-aircraft guns, among many more.
+
+There was a time when analog computers were known to be the best: often deemed as being extremely powerful. But what changed? How many times does one recall seeing analog computers these days? Well, this can be explained by the upsurge of digital computers. The advent of solid state transistors allowed digital computers to soar. These have always had a fixed output: either 0 or 1, contrary to analog computers which have a continuous input and output. So every time one repeats a calculation, they don't actually get the exact same answer.
+
+On comparing analog computation with digital computation, we can assess the strengths and weaknesses of both. The advantages of using analog computers are that they are very powerful, fast and they also don't take up much energy. For example, to add 8-bit numbers one needs around 50 transistors while analog computers can do it by simply by connecting two wires.  However, there were some drawbacks as well. The first being that analog computers could not be used for general purposes: i.e. they were only limited to single use. Secondly, there were variations during manufacturing, as it was impossible to develop components with exactly the same output. This lead to there being a certain dissimilarity every time.
+
+However, keeping aside all these downsides, analog computers are a great lead in the field of neural networking and AI. This was discovered when Rosenbaltt, an American innovator, invented his perceptron. This device was used to mimic the working neurons in our brain, developed in congruence with anatomical concepts. Rosenbaltt’s perceptron had 400 photocells arranged in a 20 by 20 pixel grid. The main objective was to differentiate between two images or shapes such as a rectangle and a circle. The way it worked was by capturing an image wherein every pixel had an activation energy and a corresponding weight. The vector dot product of this image was compared to the bias( a calculated constant value), which then gave an output of either true or false, hence allowing one to reliably distinguish between two different images.
+
+To program this device, training images were used. When different images of the two figures were displayed for the device, it gave an output which on being wrong made corresponding changes in weight. If the output was correct, no changes were made.
+
+Another promising invention was the NAV lab, an actual self-driving car. It used the same principle mentioned above but its greatest setback was its computing speed. Due to this complication the vehicle could achieve a maximum speed of only 2 km per hour.
+
+Coming back to the unanswered question: what changed? Why are analog computers not so prominent anymore? The most reasonable explanation is perhaps the breaks in development. The first winter period after the publication of the book ‘Perceptrons’ by MIT giants Marvin Minksy and Seymour Papert did not see much growth, and later in the second winter in the 1990s that number completely fell to zero. Then as the mid 2000s approached, computer scientists were generally focused on improving the already existing algorithms, leading to almost no betterment in that area for a long time.
+However, this did not mean that progress was completely hindered. As time passed, there was a small spark in this field. Fei-Fei Li, an American computer scientist, claimed that in order to make some advancement, these computers needed more training. So from the years of 2006 till 2009 she created the largest image database- ImageNet, with the highest number of human labeled images ever recorded in history. From 2010 till 2017 this database ran an annual competition where software programs competed with each other to correctly identify images. The winner of the first competition surprisingly had an error rate of almost 30%, which meant that one-third of the time images were identified wrongly. Nonetheless, in 2017 this decreased to 3.6%, while humans had an error rate of 5.1%.
+
+Apart from image recognition, there are more simple uses in the analog domain: some that cater to our daily needs. Wake up calls in smartphones, operational amplifiers or electrical integrators are used by people frequently these days.
+
+As analog devices are gradually fading out, a way needs to be devised to put a stop to them becoming less prevalent. If the focus is shifted from the competition between analog and digital technology to their integration with each other, it would truly be groundbreaking as it would lead to the world we live in today adapting to newer methods- a system that might fulfill the want of a better future.
+
+Source: Derek Muller
