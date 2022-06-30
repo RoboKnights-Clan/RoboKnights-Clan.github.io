@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaBehance,
   FaMedium,
+  FaArtstation,
   FaYoutube,
   FaSpotify,
 } from "react-icons/fa";
@@ -59,18 +60,14 @@ const MembersPage = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark text-xl"
+                      className="text-dark text-xl mt-2"
                     >
                       {social.type == "github" ? (
                         <FaGithub className="fill-black dark:fill-white" />
                       ) : social.type == "instagram" ? (
-                        <FaInstagram
-                          className="fill-black dark:fill-white"
-                        />
+                        <FaInstagram className="fill-black dark:fill-white" />
                       ) : social.type == "facebook" ? (
-                        <FaFacebook
-                          className="fill-black dark:fill-white"
-                        />
+                        <FaFacebook className="fill-black dark:fill-white" />
                       ) : social.type == "behance" ? (
                         <FaBehance className="fill-black dark:fill-white" />
                       ) : social.type == "medium" ? (
@@ -78,15 +75,12 @@ const MembersPage = () => {
                       ) : social.type == "youtube" ? (
                         <FaYoutube className="fill-black dark:fill-white" />
                       ) : social.type == "linkedin" ? (
-                        <FaLinkedin
-                          className="fill-black dark:fill-white"
-                        />
+                        <FaLinkedin className="fill-black dark:fill-white" />
                       ) : social.type == "spotify" ? (
-                        <FaSpotify
-                          className="fill-black dark:fill-white"
-                        />
-                      ) : 
-                      (
+                        <FaSpotify className="fill-black dark:fill-white" />
+                      ) : social.type == "artstation" ? (
+                        <FaArtstation className="fill-black dark:fill-white" />
+                      ) : (
                         <></>
                       )}
                     </a>

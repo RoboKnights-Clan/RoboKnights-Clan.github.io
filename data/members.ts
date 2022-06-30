@@ -9,17 +9,17 @@ export const members = [
         socials: [
           {
             type: "facebook",
-            url: "https://www.facebook.com/kshitij.gupta.944/"
+            url: "https://www.facebook.com/kshitij.gupta.944/",
           },
           {
             type: "youtube",
-            url: "https://www.youtube.com/channel/UChP2_OMqzrB0GUKlHqVwa4A"
+            url: "https://www.youtube.com/channel/UChP2_OMqzrB0GUKlHqVwa4A",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/kshitij-gupta-343667221/"
-          }
-        ]
+            url: "https://www.linkedin.com/in/kshitij-gupta-343667221/",
+          },
+        ],
       },
       {
         name: "Advitya Singhal",
@@ -33,21 +33,21 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/__yash_jha__/"
+            url: "https://www.instagram.com/__yash_jha__/",
           },
           {
             type: "github",
-            url: "https://github.com/Computer-CGuy/"
+            url: "https://github.com/Computer-CGuy/",
           },
           {
             type: "medium",
-            url: "https://medium.com/@yash-jha"
+            url: "https://medium.com/@yash-jha",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/yash-jha-314a76145/"
-          }
-        ]
+            url: "https://www.linkedin.com/in/yash-jha-314a76145/",
+          },
+        ],
       },
       {
         name: "Tanmay Singhal",
@@ -56,17 +56,17 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/tangmay_imo"
+            url: "https://www.instagram.com/tangmay_imo",
           },
           {
             type: "behance",
-            url: "http://behance.net/tantypes"
+            url: "http://behance.net/tantypes",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/tanmay-singhal-a69a49220/"
+            url: "https://www.linkedin.com/in/tanmay-singhal-a69a49220/",
           },
-        ]
+        ],
       },
       {
         name: "Ayaan Kapur",
@@ -122,9 +122,9 @@ export const members = [
         socials: [
           {
             type: "github",
-            url: "https://github.com/cmd05"
-          }
-        ]
+            url: "https://github.com/cmd05",
+          },
+        ],
       },
       {
         name: "Ayush Daga",
@@ -133,17 +133,17 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/great_pixel120/"
+            url: "https://www.instagram.com/great_pixel120/",
           },
           {
             type: "github",
-            url: "https://github.com/Great-Pixel120"
+            url: "https://github.com/Great-Pixel120",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/ayush-daga-341045226/"
-          }
-        ]
+            url: "https://www.linkedin.com/in/ayush-daga-341045226/",
+          },
+        ],
       },
       {
         name: "Anubhav Choudhery",
@@ -152,13 +152,13 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/anubhav.choudhery/"
+            url: "https://www.instagram.com/anubhav.choudhery/",
           },
           {
             type: "facebook",
-            url: "https://www.facebook.com/anubhav.choudhery.9"
+            url: "https://www.facebook.com/anubhav.choudhery.9",
           },
-        ]
+        ],
       },
       {
         name: "Pratye Aggarwal",
@@ -177,21 +177,21 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/Yashas_gogia/"
+            url: "https://www.instagram.com/Yashas_gogia/",
           },
           {
             type: "github",
-            url: "https://github.com/nanobotical"
+            url: "https://github.com/nanobotical",
           },
           {
             type: "medium",
-            url: "https://medium.com/@yashas.gogna31"
+            url: "https://medium.com/@yashas.gogna31",
           },
           {
             type: "youtube",
-            url: "https://www.youtube.com/channel/UCwF8oSKPEcyFz-3NDOzIDtw"
+            url: "https://www.youtube.com/channel/UCwF8oSKPEcyFz-3NDOzIDtw",
           },
-        ]
+        ],
       },
       {
         name: "Nikunj Aggarwal",
@@ -201,7 +201,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 11 (2022-23)",
+    year: "Class 11",
     members: [
       {
         name: "Tanishq Gogia",
@@ -214,16 +214,16 @@ export const members = [
         src: "/images/members/Garv.jpg",
         socials: [
           {
-            type: "instagram",
-            url: "https://www.instagram.com/_garv03/",
-          },
-          {
             type: "github",
             url: "https://github.com/GarvJain03",
           },
           {
             type: "linkedin",
             url: "https://www.linkedin.com/in/garv-jain-907aa6218/",
+          },
+          {
+            type: "artstation",
+            url: "https://www.artstation.com/garv_jain03",
           },
         ],
       },
@@ -238,8 +238,8 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/adi-mathur-8725151a9/"
-          }
+            url: "https://www.linkedin.com/in/adi-mathur-8725151a9/",
+          },
         ],
       },
       {
@@ -249,21 +249,21 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/sandwich_bhavya_/"
+            url: "https://www.instagram.com/sandwich_bhavya_/",
           },
           {
             type: "github",
-            url: "https://github.com/BhavyaVerma55"
+            url: "https://github.com/BhavyaVerma55",
           },
           {
             type: "facebook",
-            url: "https://www.facebook.com/profile.php?id=100077520156992"
+            url: "https://www.facebook.com/profile.php?id=100077520156992",
           },
           {
             type: "behance",
-            url: "https://www.behance.net/bhavyaverma10j"
-          }
-        ]
+            url: "https://www.behance.net/bhavyaverma10j",
+          },
+        ],
       },
       {
         name: "Swarnika Bhardwaj",
@@ -277,9 +277,9 @@ export const members = [
         socials: [
           {
             type: "github",
-            url: "https://github.com/SilverBullet2005"
-          }
-        ]
+            url: "https://github.com/SilverBullet2005",
+          },
+        ],
       },
       {
         name: "Jasnoor Kaur",
@@ -294,7 +294,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 10 (2022-23)",
+    year: "Class 10",
     members: [
       {
         name: "S. Shrikirti",
@@ -308,17 +308,17 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/mishaa1109/"
+            url: "https://www.instagram.com/mishaa1109/",
           },
           {
             type: "github",
-            url: "https://github.com/Mishaa1109"
+            url: "https://github.com/Mishaa1109",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/mishaa-kalra-513772222/"
-          }
-        ]
+            url: "https://www.linkedin.com/in/mishaa-kalra-513772222/",
+          },
+        ],
       },
       {
         name: "Rihit Wadhwa",
@@ -328,7 +328,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 9 (2022-23)",
+    year: "Class 9",
     members: [
       {
         name: "Yuvraj Matta",
@@ -337,13 +337,13 @@ export const members = [
         socials: [
           {
             type: "youtube",
-            url: "https://m.youtube.com/channel/UCqr9DHvhR0r-JIoutyNFhxg"
+            url: "https://m.youtube.com/channel/UCqr9DHvhR0r-JIoutyNFhxg",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/yuvraj-matta-131764220"
-          }
-        ]
+            url: "https://www.linkedin.com/in/yuvraj-matta-131764220",
+          },
+        ],
       },
       {
         name: "Shaurya Markanda",
@@ -353,7 +353,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 8 (2022-23)",
+    year: "Class 8",
     members: [
       {
         name: "Neil Sindwani",
@@ -362,9 +362,9 @@ export const members = [
         socials: [
           {
             type: "github",
-            url: "https://github.com/DumbbAlgo"
+            url: "https://github.com/DumbbAlgo",
           },
-        ]
+        ],
       },
       {
         name: "Agastya Vatts",
@@ -373,9 +373,9 @@ export const members = [
         socials: [
           {
             type: "youtube",
-            url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ"
+            url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ",
           },
-        ]
+        ],
       },
     ],
   },
