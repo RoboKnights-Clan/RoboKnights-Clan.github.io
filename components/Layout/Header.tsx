@@ -26,6 +26,10 @@ export const links: { name: string; url: string }[] = [
     name: "Achievements",
     url: "/achievements",
   },
+  {
+    name: "Inductions",
+    url: "/inductions",
+  },
 ];
 
 const Header: React.FC = () => {
@@ -38,7 +42,7 @@ const Header: React.FC = () => {
 
   const router = useRouter();
 
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <>
@@ -66,15 +70,25 @@ const Header: React.FC = () => {
             onClick={handleToggle}
             className="ml-auto flex items-center space-x-8 text-2xl text-dark dark:text-white lg:hidden"
           >
-            {showNavbar ? <ImCross /> : 
-            <>
-            <button
-              aria-label="Toggle Dark Mode"
-              className="px-5"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
-            <GiHamburgerMenu />
-            </>}
+            {showNavbar ? (
+              <ImCross />
+            ) : (
+              <>
+                <button
+                  aria-label="Toggle Dark Mode"
+                  className="px-5"
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                >
+                  <img
+                    src="/images/mode.png"
+                    width={40}
+                    height={40}
+                    className="invert dark:invert-0"
+                  ></img>
+                </button>
+                <GiHamburgerMenu />
+              </>
+            )}
           </button>
           <div className="hidden space-x-12 lg:ml-auto lg:flex lg:items-center">
             {links.map((link) => (
@@ -93,8 +107,15 @@ const Header: React.FC = () => {
             <button
               aria-label="Toggle Dark Mode"
               className="px-5"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            ><img src="/images/mode.png" width={40} height={40} className="invert dark:invert-0"></img></button>
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <img
+                src="/images/mode.png"
+                width={40}
+                height={40}
+                className="invert dark:invert-0"
+              ></img>
+            </button>
           </div>
         </div>
         {showNavbar && (
