@@ -1,8 +1,9 @@
+import type { NextPage } from "next";
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import { resources } from "../data/resources";
 
-const ResourcesPage = () => {
+const ResourcesPage: NextPage = () => {
   return (
     <Layout title="Resources">
       <div className="container mx-auto md:px-24 px-5 py-8">

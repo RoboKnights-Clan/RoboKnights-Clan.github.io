@@ -1,13 +1,19 @@
+import type { NextPage } from "next";
 import React, { useState } from "react";
 import Layout from "../components/Layout/Layout";
 import { achievements } from "../data/achievements";
 
-const AlumniPage = () => {
+const AlumniPage: NextPage = () => {
   const [search, setSearch] = useState("");
 
   const ments = achievements.map((ment, index) => {
     return (
-      <tr className={"border-y-2 border-black dark:border-gray-500 dark:text-gray-db"} key={index}>
+      <tr
+        className={
+          "border-y-2 border-black dark:border-gray-500 dark:text-gray-db"
+        }
+        key={index}
+      >
         <td className="px-4 py-3">{ment.competition}</td>
         <td className="px-4 pr-0 py-3">{ment.level}</td>
         <td className="px-4 py-3">{ment.year}</td>

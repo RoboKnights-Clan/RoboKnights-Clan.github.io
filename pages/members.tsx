@@ -13,8 +13,9 @@ import {
   FaSpotify,
 } from "react-icons/fa";
 import { useTheme } from "next-themes";
+import type { NextPage } from "next";
 
-const MembersPage = () => {
+const MembersPage: NextPage = () => {
   let [shownMembers, setMembers] = React.useState(members);
   let { theme, setTheme } = useTheme();
 

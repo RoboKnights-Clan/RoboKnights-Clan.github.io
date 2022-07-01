@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import type { NextPage } from "next";
 import Layout from "../components/Layout/Layout";
 import { about } from "../data/about";
 
-const AboutPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <Layout title="About">
       <div className="container mx-auto md:px-24 flex px-5 py-12 md:flex-row flex-col items-center text-dark dark:text-white">

@@ -1,8 +1,9 @@
+import type { NextPage } from "next";
 import React, { useState } from "react";
 import Layout from "../components/Layout/Layout";
 import { alumni } from "../data/alumni";
 
-const AlumniPage = () => {
+const AlumniPage: NextPage = () => {
   const [shownAlumni, setAlumni] = useState(alumni);
 
   const onSearchBarChange = () => {
@@ -67,7 +68,11 @@ const AlumniPage = () => {
           .map((alum, index) => {
             return (
               <div key={index}>
-                <h2 className={"text-dark dark:text-gray-300 text-3xl pb-6 font-medium pt-12"}>
+                <h2
+                  className={
+                    "text-dark dark:text-gray-300 text-3xl pb-6 font-medium pt-12"
+                  }
+                >
                   {alum.batch}
                 </h2>
                 <div className="flex flex-wrap -m-2">
@@ -79,7 +84,9 @@ const AlumniPage = () => {
                             <h2 className="text-gray-900 dark:text-white font-sanssm font-medium text-xl">
                               {alum.name}
                             </h2>
-                            <p className="text-gray-500 dark:text-gray-e9">{alum.role}</p>
+                            <p className="text-gray-500 dark:text-gray-e9">
+                              {alum.role}
+                            </p>
                           </div>
                         </div>
                       </div>
