@@ -1,6 +1,12 @@
 export const achievements = [
   {
-    competition: "Iwallet event of Techfest '21/22 IITB",
+    competition: " Mindmaze, IIT Delhi's Tryst'22: A Voyage to Zenith",
+    level: "International",
+    year: "2022",
+    prize: "2nd Runner up",
+  },
+  {
+    competition: "Iwallet event of Techfest'21/22 IIT Bombay",
     level: "International",
     year: "2022",
     prize: "Finalist",
@@ -13,8 +19,7 @@ export const achievements = [
     prize: "Winners",
   },
   {
-    competition:
-      "Robocon event of Incognito 2021, Somerville School Noida Annual Tech Fest",
+    competition:"Robocon event of Incognito 2021, Somerville School Noida Annual Tech Fest",
     level: "Interschool",
     year: "2021",
     prize: "Winners",
