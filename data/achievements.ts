@@ -3,7 +3,7 @@ export const achievements = [
     competition: " Mindmaze, IIT Delhi's Tryst'22: A Voyage to Zenith",
     level: "International",
     year: "2022",
-    prize: "2nd Runner up",
+    prize: "Second Runners Up",
   },
   {
     competition: "Iwallet event of Techfest'21/22 IIT Bombay",
