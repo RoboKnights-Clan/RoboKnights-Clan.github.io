@@ -1,5 +1,118 @@
 export const alumni = [
   {
+    batch: "2021-22",
+    people: [
+      {
+        name: "Kshitij Gupta",
+        role: "President",
+        src: "/images/members/Kshitij.png",
+        socials: [
+          {
+            type: "facebook",
+            url: "https://www.facebook.com/kshitij.gupta.944/",
+          },
+          {
+            type: "youtube",
+            url: "https://www.youtube.com/channel/UChP2_OMqzrB0GUKlHqVwa4A",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/kshitij-gupta-343667221/",
+          },
+        ],
+      },
+      {
+        name: "Advitya Singhal",
+        role: "President",
+        src: "/images/members/Advitya.jpg",
+      },
+      {
+        name: "Yash Jha",
+        role: "Vice President",
+        src: "/images/members/Yash.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/__yash_jha__/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/Computer-CGuy/",
+          },
+          {
+            type: "medium",
+            url: "https://medium.com/@yash-jha",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/yash-jha-314a76145/",
+          },
+        ],
+      },
+      {
+        name: "Tanmay Singhal",
+        role: "Vice President",
+        src: "/images/members/Tanmay.png",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/tangmay_imo",
+          },
+          {
+            type: "behance",
+            url: "http://behance.net/tantypes",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/tanmay-singhal-a69a49220/",
+          },
+        ],
+      },
+      {
+        name: "Ayaan Kapur",
+        role: "Director",
+        src: "/images/members/Ayaan.jpg",
+      },
+      {
+        name: "Shashwat Raj",
+        role: "Senior Member",
+        src: "/images/members/Shashwat.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://instagram.com/shash.is.fine/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/darthvader58",
+          },
+          {
+            type: "behance",
+            url: "https://www.behance.net/shashwatraj1",
+          },
+          {
+            type: "medium",
+            url: "https://shashwatraj.medium.com/",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/shashwat-raj-948b431b0",
+          },
+        ],
+      },
+      {
+        name: "Aniket Negi",
+        role: "Senior Member",
+        src: "/images/members/Aniket.png",
+      },
+      {
+        name: "Rudra Pruthi",
+        role: "Member",
+        src: "/images/members/Rudra.jpg",
+      },
+    ],
+  },
+  {
     batch: "2020-21",
     people: [
       {
