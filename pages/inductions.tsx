@@ -11,7 +11,7 @@ const InductionsPage: NextPage = () => {
         <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 dark:text-gray-e9 font-sanssm">
           Inductions'22
         </h1>{" "}
-        <h3 className="mt-8 sm:text-xl text-2xl font-bold italic">
+        <h3 className="mt-8 sm:text-xl text-2xl font-semibold">
           RoboKnights, The Robotics Club of DPS RK Puram, is back with its
           annual inductions!
         </h3>
@@ -30,9 +30,12 @@ const InductionsPage: NextPage = () => {
           qualities that inspire learners and make the projects more efficient.
         </p>
         <div className="flex items-center justify-center mt-8">
-          <button className="bg-dark uppercase text-white w-fit py-4 px-12">
+          <a
+            href="https://bit.ly/Roboknights_Inductions"
+            className="inline-flex mr-2 cursor-pointer text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-8 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm"
+          >
             Register Now
-          </button>
+          </a>
         </div>
       </div>
     </Layout>
