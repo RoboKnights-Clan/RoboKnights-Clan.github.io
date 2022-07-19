@@ -3,40 +3,69 @@
 import type { NextPage } from "next";
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import Link from "next/link";
 
 const InductionsPage: NextPage = () => {
   return (
     <Layout title="Inductions 2022">
-      <div className="container mx-auto md:px-24 flex px-5 py-12 flex-col text-dark dark:text-white">
-        <h1 className="sm:text-4xl text-3xl font-medium mb-1 text-gray-900 dark:text-gray-e9 font-sanssm">
-          Inductions'22
-        </h1>{" "}
-        <h3 className="mt-8 sm:text-xl text-2xl font-semibold">
-          RoboKnights, The Robotics Club of DPS RK Puram, is back with its
-          annual inductions!
-        </h3>
-        <div className="flex items-center justify-center">
+      <div className="container mx-auto lg:px-24 flex px-5 py-12 md:flex-row flex-col items-center text-dark">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+            Overview
+          </h1>
+          <p className="mb-8 text-gray-600 leading-relaxed dark:text-gray-c8">
+            RoboKnights is back with its annual induction process, this time
+            even more INTERESTING!
+          </p>
+          <p className="mb-8 leading-relaxed dark:text-gray-c8">
+            Many think that Robotics is limited to those having proficiency in
+            creativity and science, while we agree that these skills are
+            helpful, and admit that we are looking for them, we also believe
+            that enthusiasm and dedication are arguably more important, as they
+            are the qualities that inspire learners and make the projects more
+            efficient. This year’s inductions will not require any prerequisites
+            apart from a very small percentage from the resources provided
+            below. An orientation session will be held to acquaint the students
+            about the same.
+          </p>
+          <div className="flex justify-center">
+            <a className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
+              Register Now
+            </a>
+            <Link href="/resources" passHref>
+              <a className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
+                Resources
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2 w-full">
           <img
-            src="/images/inductions_hero.png"
+            className="object-cover object-center rounded"
             alt="hero"
-            className="lg:w-1/2 my-8 w-full"
+            src="/images/hero.png"
           />
         </div>
-        <p className="mt-8 sm:text-xl text-2xl">
-          Many think that Robotics is limited to those having proficiency in
-          creativity and science, while we agree that these skills are helpful,
-          and admit that we are looking for them, we also believe that
-          enthusiasm and dedication are arguably more important, as they are the
-          qualities that inspire learners and make the projects more efficient.
+      </div>
+      <div className="container mx-auto lg:px-24 px-5 py-12">
+        <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+          Updates
+        </h1>
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
+          Keep checking and reloading this page to stay updates with the
+          inductions.
         </p>
-        <div className="flex items-center justify-center mt-8">
-          <a
-            href="https://bit.ly/Roboknights_Inductions"
-            className="inline-flex mr-2 cursor-pointer text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-8 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm"
-          >
-            Register Now
-          </a>
-        </div>
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
+          Coming Soon....
+        </p>
+      </div>
+      <div className="container mx-auto lg:px-24 px-5 py-12">
+        <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+          Orientation
+        </h1>
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
+          Coming Soon....
+        </p>
       </div>
     </Layout>
   );

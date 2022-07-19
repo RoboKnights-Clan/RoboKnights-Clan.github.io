@@ -38,10 +38,6 @@ export const members = [
         src: "https://media.discordapp.net/attachments/828640298354737163/828842225973723206/Anubhav.jpg?width=1162&height=1135",
         socials: [
           {
-            type: "instagram",
-            url: "https://www.instagram.com/anubhav.choudhery/",
-          },
-          {
             type: "facebook",
             url: "https://www.facebook.com/anubhav.choudhery.9",
           },
