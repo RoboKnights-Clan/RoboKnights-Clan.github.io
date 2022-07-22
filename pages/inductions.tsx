@@ -52,7 +52,7 @@ const InductionsPage: NextPage = () => {
           Updates
         </h1>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
-          Keep checking and reloading this page to stay updates with the
+          Keep checking and reloading this page to stay updated with the
           inductions.
         </p>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
