@@ -24,7 +24,7 @@ const socials: { icon: React.ReactFragment; url: string }[] = [
 
 const Footer = () => {
   return (
-    <div className="p-5 bg-dark dark:bg-footerdark text-center flex items-center lg:text-left">
+    <div className="p-5 bg-dark dark:bg-gray-e9 text-center flex items-center lg:text-left">
       <div className="grid lg:grid-cols-4 md:grid-cols-2">
         <div className="mb-6 lg:mr-24 sm:mx-auto flex items-center justify-center">
           <img src="/images/traced_logo.svg" alt="" />

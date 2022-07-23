@@ -64,7 +64,12 @@ const InductionsPage: NextPage = () => {
           Orientation
         </h1>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
-          Coming Soon....
+        We know that all of you are extremely curious and excited to give this year's inductions and become a member of RoboKnights.
+We will be commencing the inductions with an orientation meet conducted on Monday, 
+the timings and link for which will be shared in the classroom.
+We hope to see you all there as we will be introducing you with what the club stands for and how one needs to
+go about this year's inductions. 
+
         </p>
       </div>
     </Layout>
