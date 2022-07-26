@@ -169,11 +169,6 @@ export const members = [
         role: "Senior Member",
         src: "/images/members/Jasnoor.png",
       },
-      {
-        name: "Rishit Yadav",
-        role: "Member",
-        src: "/images/members/Rishit.png",
-      },
     ],
   },
   {
