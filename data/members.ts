@@ -49,11 +49,6 @@ export const members = [
         src: "/images/members/Pratye.jpg",
       },
       {
-        name: "Ishaan Attam",
-        role: "Senior Member",
-        src: "/images/members/Ishaan.jpg",
-      },
-      {
         name: "Yashas Gogia",
         role: "Senior Member",
         src: "https://cdn.discordapp.com/attachments/909449917599195146/984497912681725992/PHOTO.jpeg",
