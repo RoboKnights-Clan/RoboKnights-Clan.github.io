@@ -29,9 +29,11 @@ const InductionsPage: NextPage = () => {
             about the same.
           </p>
           <div className="flex justify-center">
+          <Link href="https://bit.ly/Roboknights_Inductions" passHref>
             <a className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-12 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
               Register Now
             </a>
+            </Link>
             <Link href="/resources" passHref>
               <a className="inline-flex mr-2 text-dark dark:text-white dark:hover:bg-white dark:hover:text-dark bg-white dark:bg-transparent border-2 border-black dark:border-white py-2 px-16 focus:outline-none hover:bg-black hover:text-white transition duration-200 ease-in-out rounded text-lg font-sansm">
                 Resources
