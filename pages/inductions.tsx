@@ -57,21 +57,35 @@ const InductionsPage: NextPage = () => {
           Keep checking and reloading this page to stay updated with the
           inductions.
         </p>
-        <p className="mb-8 leading-relaxed dark:text-gray-c8">
-          Coming Soon....
-        </p>
       </div>
-      <div className="container mx-auto lg:px-24 px-5 py-12">
-        <h1 className="sm:text-5xl text-3xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+      <div className="container mx-auto lg:px-24 px-5 pb-12">
+        <h1 className="sm:text-4xl text-2xl mb-4 font-bold text-dark font-sanssm dark:text-white">
           Orientation
         </h1>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
-        We know that all of you are extremely curious and excited to give this year's inductions and become a member of RoboKnights.
-We will be commencing the inductions with an orientation meet conducted on Monday, 
-the timings and link for which will be shared in the classroom.
-We hope to see you all there as we will be introducing you with what the club stands for and how one needs to
-go about this year's inductions. 
+          The inductions began with an orientation meet conducted on Monday, July 15th 2020, introducing what the club stands for and how one needs to go about this year's inductions. 
+        </p>
 
+        <h1 className="sm:text-4xl text-2xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+          Round 1
+        </h1>
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
+        The first round of the induction process will be conducted on Wednesday, 10th August in 2nd floor, CB block. Here are a few guidelines for the same: <br/>
+1) Test timings: Reporting time: 1.50 pm; Reading time: 2.00 pm; Writing time: 2.10 pm - 3.35 pm.  <br/>
+2) Students have to report to CB block 2nd floor. <br/>
+3) Writing space will be provided in the question paper.  <br/>
+4) Rough sheets will be provided by invigilator. <br/>
+5) Students are supposed to fill the consent form for the stay back using school ID before the induction test, without which you will not be permitted to give the inductions.  <br/>
+6) Students are required to bring the signed consent form for stay back before the inductions' paper.  <br/>
+7) Result of the test will be published in the classroom. <br/>
+        </p>
+
+        <h1 className="sm:text-4xl text-2xl mb-4 font-bold text-dark font-sanssm dark:text-white">
+          Creative
+        </h1>
+        <p className="mb-8 leading-relaxed dark:text-gray-c8">
+        The creative inductions are live -new and fresh- just in time for you to put yourself to the test. Anyone can participate: the document attached in the classroom contains all the prompts on the basis of which you can send in your entries. There are various subcategories and you can try for as many of them as you like. Put your best foot forward!
+        <br/><br/> All interested participants must submit their entries strictly by 11th August 2022. No plagiarised or late submissions will be entertained.
         </p>
       </div>
     </Layout>
