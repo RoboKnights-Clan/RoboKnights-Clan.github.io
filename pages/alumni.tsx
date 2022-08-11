@@ -70,7 +70,7 @@ const AlumniPage: NextPage = () => {
               <div key={index}>
                 <h2
                   className={
-                    "text-dark dark:text-gray-300 text-3xl pb-6 font-medium pt-12"
+                    "text-dark font-medium dark:text-gray-300 text-3xl pb-6 font-medium pt-12"
                   }
                 >
                   {alum.batch}
