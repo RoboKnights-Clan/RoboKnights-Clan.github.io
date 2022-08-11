@@ -76,6 +76,11 @@ export const members = [
         role: "Member",
         src: "https://media.discordapp.net/attachments/893514358141902858/893514451423203359/Nikunj_Agarwal_11I.jpeg?width=670&height=670",
       },
+      {
+        name: "Aditya Viraj Garg",
+        role: "Member",
+        src: "/images/members/Aditya.png",
+      },
     ],
   },
   {
