@@ -63,7 +63,7 @@ const InductionsPage: NextPage = () => {
           Orientation
         </h1>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
-          The inductions began with an orientation meet conducted on Monday, July 15th 2020, introducing what the club stands for and how one needs to go about this year's inductions. 
+          The inductions began with an orientation meet conducted on Monday, July 25th 2022, introducing what the club stands for and how one needs to go about this year's inductions. 
         </p>
 
         <h1 className="sm:text-4xl text-2xl mb-4 font-bold text-dark font-sanssm dark:text-white">
