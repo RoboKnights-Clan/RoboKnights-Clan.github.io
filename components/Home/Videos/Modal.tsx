@@ -16,7 +16,7 @@ const Modal = ({ videoId, image, name }) => {
         onClick={() => setOpen(true)}
       />
       <button
-        className="bg-black font-bold text-white py-4 w-3/4 text-xl rounded-b-md hover:bg-dark transition duration-200 ease-in-out"
+        className="bg-black font-bold text-white py-4 w-full lg:w-3/4 text-xl rounded-b-md hover:bg-dark transition duration-200 ease-in-out"
         onClick={() => setOpen(true)}
       >
         {name}
