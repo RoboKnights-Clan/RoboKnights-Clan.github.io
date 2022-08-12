@@ -3,38 +3,8 @@ export const members = [
     year: "Class 12",
     members: [
       {
-        name: "Salil Mittal",
-        role: "Senior Member",
-        src: "/images/members/Salil.jpg",
-        socials: [
-          {
-            type: "github",
-            url: "https://github.com/cmd05",
-          },
-        ],
-      },
-      {
-        name: "Ayush Daga",
-        role: "Senior Member",
-        src: "https://cdn.discordapp.com/attachments/909449917599195146/982268104887394344/IMG-20210929-WA0006.jpg?width=670&height=670",
-        socials: [
-          {
-            type: "instagram",
-            url: "https://www.instagram.com/great_pixel120/",
-          },
-          {
-            type: "github",
-            url: "https://github.com/Great-Pixel120",
-          },
-          {
-            type: "linkedin",
-            url: "https://www.linkedin.com/in/ayush-daga-341045226/",
-          },
-        ],
-      },
-      {
         name: "Anubhav Choudhery",
-        role: "Senior Member",
+        role: "President",
         src: "https://media.discordapp.net/attachments/828640298354737163/828842225973723206/Anubhav.jpg?width=1162&height=1135",
         socials: [
           {
@@ -44,13 +14,8 @@ export const members = [
         ],
       },
       {
-        name: "Pratye Aggarwal",
-        role: "Senior Member",
-        src: "/images/members/Pratye.jpg",
-      },
-      {
         name: "Yashas Gogia",
-        role: "Senior Member",
+        role: "President",
         src: "https://cdn.discordapp.com/attachments/909449917599195146/984497912681725992/PHOTO.jpeg",
         socials: [
           {
@@ -70,6 +35,41 @@ export const members = [
             url: "https://www.youtube.com/channel/UCwF8oSKPEcyFz-3NDOzIDtw",
           },
         ],
+      },
+      {
+        name: "Salil Mittal",
+        role: "Vice President",
+        src: "/images/members/Salil.jpg",
+        socials: [
+          {
+            type: "github",
+            url: "https://github.com/cmd05",
+          },
+        ],
+      },
+      {
+        name: "Ayush Daga",
+        role: "Vice President",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/982268104887394344/IMG-20210929-WA0006.jpg?width=670&height=670",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/great_pixel120/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/Great-Pixel120",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/ayush-daga-341045226/",
+          },
+        ],
+      },
+      {
+        name: "Pratye Aggarwal",
+        role: "Senior Member",
+        src: "/images/members/Pratye.jpg",
       },
       {
         name: "Nikunj Aggarwal",
