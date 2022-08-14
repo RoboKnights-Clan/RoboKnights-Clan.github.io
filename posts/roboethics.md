@@ -1,7 +1,7 @@
 ---
 title: "Roboethics in the Modern World"
 date: "May 30 2022"
-author: "Swarnika Bharadwaj"
+author: "Swarnika Bhardwaj"
 excerpt: "The term “roboethics” originates back to the beginning of the twenty-first century. However, the attention it is receiving is fairly new. With the concept of ethics in the spotlight, a debate seems to have sparked on its implementation in various fields of work- especially technology and innovation."
 ---
 

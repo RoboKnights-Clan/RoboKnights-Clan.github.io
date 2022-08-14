@@ -1,7 +1,7 @@
 ---
 title: "Women in Robotics"
 date: "August 12 2022"
-author: "Swarnika Bharadwaj"
+author: "Swarnika Bhardwaj"
 excerpt: "With the world in an ongoing transformational era- where Technology and Automation are central figures, it is very easy to overlook the contributions of one of the most noteworthy groups: Women."
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Compliant Mechanics"
 date: "July 16 2022"
-author: "Swarnika Bharadwaj and Nikunj Aggarwal"
+author: "Swarnika Bhardwaj and Nikunj Aggarwal"
 excerpt: "In 2014, Disney released the movie Big Hero 6. Set in an urban city, its central protagonist was Baymax, an inflatable medical robot. The movie gained wide recognition, mostly because of its role in the introduction of the concept of soft robots to the masses. These are not that new of an idea, in fact, soft robots have been around for quite some time. The coming of Big Hero 6 simply made their existence more noticeable. "
 ---
 

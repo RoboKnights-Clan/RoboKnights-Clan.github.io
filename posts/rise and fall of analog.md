@@ -1,7 +1,7 @@
 ---
 title: "Rise and Fall of Analog"
 date: "June 29 2022"
-author: "Swarnika Bharadwaj and Ayush Daga"
+author: "Swarnika Bhardwaj and Ayush Daga"
 excerpt: "The first analog computer, then commonly known as ‘the tide predictor’, was made by Lord Kelvin in 1873. Dating back to as early as the nineteenth century, analog technology has a rich, vast history: one that not many know of. Being multipurpose devices, they once carried out crucial functions like tide prediction, eclipse prediction and guiding anti-aircraft guns, among many more."
 ---
 
@@ -9,7 +9,7 @@ The first analog computer, then commonly known as ‘the tide predictor’, was 
 
 There was a time when analog computers were known to be the best: often deemed as being extremely powerful. But what changed? How many times does one recall seeing analog computers these days? Well, this can be explained by the upsurge of digital computers. The advent of solid state transistors allowed digital computers to soar. These have always had a fixed output: either 0 or 1, contrary to analog computers which have a continuous input and output. So every time one repeats a calculation, they don't actually get the exact same answer.
 
-On comparing analog computation with digital computation, we can assess the strengths and weaknesses of both. The advantages of using analog computers are that they are very powerful, fast and they also don't take up much energy. For example, to add 8-bit numbers one needs around 50 transistors while analog computers can do it by simply by connecting two wires.  However, there were some drawbacks as well. The first being that analog computers could not be used for general purposes: i.e. they were only limited to single use. Secondly, there were variations during manufacturing, as it was impossible to develop components with exactly the same output. This lead to there being a certain dissimilarity every time.
+On comparing analog computation with digital computation, we can assess the strengths and weaknesses of both. The advantages of using analog computers are that they are very powerful, fast and they also don't take up much energy. For example, to add 8-bit numbers one needs around 50 transistors while analog computers can do it by simply by connecting two wires. However, there were some drawbacks as well. The first being that analog computers could not be used for general purposes: i.e. they were only limited to single use. Secondly, there were variations during manufacturing, as it was impossible to develop components with exactly the same output. This lead to there being a certain dissimilarity every time.
 
 However, keeping aside all these downsides, analog computers are a great lead in the field of neural networking and AI. This was discovered when Rosenbaltt, an American innovator, invented his perceptron. This device was used to mimic the working neurons in our brain, developed in congruence with anatomical concepts. Rosenbaltt’s perceptron had 400 photocells arranged in a 20 by 20 pixel grid. The main objective was to differentiate between two images or shapes such as a rectangle and a circle. The way it worked was by capturing an image wherein every pixel had an activation energy and a corresponding weight. The vector dot product of this image was compared to the bias( a calculated constant value), which then gave an output of either true or false, hence allowing one to reliably distinguish between two different images.
 
