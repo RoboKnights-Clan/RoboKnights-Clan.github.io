@@ -1,5 +1,5 @@
 ---
-title: "The apocalypse armed with a scalpel"
+title: "The Apocalypse Armed with a Scalpel"
 date: "September 24 2022"
 author: "Mannat Kaur"
 excerpt: "Guess what A.I. governs now?
