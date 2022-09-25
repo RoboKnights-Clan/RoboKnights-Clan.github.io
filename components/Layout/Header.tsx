@@ -26,10 +26,6 @@ export const links: { name: string; url: string }[] = [
     name: "Achievements",
     url: "/achievements",
   },
-  {
-    name: "Inductions",
-    url: "/inductions",
-  },
 ];
 
 const Header: React.FC = () => {
