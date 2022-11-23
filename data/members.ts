@@ -209,6 +209,11 @@ export const members = [
         ],
       },
       {
+        name: "Mannat Kaur",
+        role: "Member",
+        src: "/images/members/Mannat.png",
+      },
+      {
         name: "Rihit Wadhwa",
         role: "Member",
         src: "/images/members/Rihit.jpg",
@@ -264,6 +269,16 @@ export const members = [
             url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ",
           },
         ],
+      },
+    ],
+  },
+  {
+    year: "Class 7",
+    members: [
+      {
+        name: "Medhansh Pandya",
+        role: "Member",
+        src: "/images/members/Medhansh.png",
       },
     ],
   },
