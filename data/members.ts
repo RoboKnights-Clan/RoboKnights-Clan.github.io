@@ -214,6 +214,16 @@ export const members = [
         src: "/images/members/Mannat.png",
       },
       {
+        name: "Adhyann Singal",
+        role: "Member",
+        src: "/images/members/Adhyann.png",
+      },
+      {
+        name: "Shiven Kanodia",
+        role: "Member",
+        src: "/images/members/Shiven.png",
+      },
+      {
         name: "Rihit Wadhwa",
         role: "Member",
         src: "/images/members/Rihit.jpg",
@@ -279,6 +289,16 @@ export const members = [
         name: "Medhansh Pandya",
         role: "Member",
         src: "/images/members/Medhansh.png",
+      },
+      {
+        name: "Arhaan Sharma",
+        role: "Member",
+        src: "/images/members/Arhaan.png",
+      },
+      {
+        name: "Adhiraj Jain",
+        role: "Member",
+        src: "/images/members/Adhiraj.png",
       },
     ],
   },
