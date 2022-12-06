@@ -13,11 +13,13 @@ const Layout: React.FC<IlayoutProps> = ({ title, children }: IlayoutProps) => {
     <>
       <Head>
         <title>{title} | RoboKnights</title>
+        <meta
+          name="description"
+          content="RoboKnights is the Robotics Club of Delhi Public School, R.K. Puram"
+        />
       </Head>
       <Header />
-      <div className="dark:bg-dark dark:text-white">
-        {children}
-      </div>
+      <div className="dark:bg-dark dark:text-white">{children}</div>
       <Footer />
     </>
   );

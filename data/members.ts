@@ -169,6 +169,16 @@ export const members = [
         role: "Senior Member",
         src: "/images/members/Jasnoor.png",
       },
+      {
+        name: "Aryan Daga",
+        role: "Member",
+        src: "/images/members/Aryan.png",
+      },
+      {
+        name: "Vani Sen",
+        role: "Member",
+        src: "/images/members/Vani.png",
+      },
     ],
   },
   {
@@ -197,6 +207,21 @@ export const members = [
             url: "https://www.linkedin.com/in/mishaa-kalra-513772222/",
           },
         ],
+      },
+      {
+        name: "Mannat Kaur",
+        role: "Member",
+        src: "/images/members/Mannat.png",
+      },
+      {
+        name: "Adhyann Singal",
+        role: "Member",
+        src: "/images/members/Adhyann.png",
+      },
+      {
+        name: "Shiven Kanodia",
+        role: "Member",
+        src: "/images/members/Shiven.png",
       },
       {
         name: "Rihit Wadhwa",
@@ -254,6 +279,26 @@ export const members = [
             url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ",
           },
         ],
+      },
+    ],
+  },
+  {
+    year: "Class 7",
+    members: [
+      {
+        name: "Medhansh Pandya",
+        role: "Member",
+        src: "/images/members/Medhansh.png",
+      },
+      {
+        name: "Arhaan Sharma",
+        role: "Member",
+        src: "/images/members/Arhaan.png",
+      },
+      {
+        name: "Adhiraj Jain",
+        role: "Member",
+        src: "/images/members/Adhiraj.png",
       },
     ],
   },
