@@ -54,7 +54,7 @@ export const members = [
         socials: [
           {
             type: "instagram",
-            url: "https://www.instagram.com/great_pixel120/",
+            url: "https://www.instagram.com/the_ayush_daga/",
           },
           {
             type: "github",
