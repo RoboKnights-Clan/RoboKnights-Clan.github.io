@@ -1,5 +1,89 @@
 export const alumni = [
   {
+    batch: "2022-23",
+    people: [
+      {
+        name: "Anubhav Choudhery",
+        role: "President",
+        src: "https://media.discordapp.net/attachments/828640298354737163/828842225973723206/Anubhav.jpg?width=1162&height=1135",
+        socials: [
+          {
+            type: "facebook",
+            url: "https://www.facebook.com/anubhav.choudhery.9",
+          },
+        ],
+      },
+      {
+        name: "Yashas Gogia",
+        role: "President",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/984497912681725992/PHOTO.jpeg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/Yashas_gogia/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/nanobotical",
+          },
+          {
+            type: "medium",
+            url: "https://medium.com/@yashas.gogna31",
+          },
+          {
+            type: "youtube",
+            url: "https://www.youtube.com/channel/UCwF8oSKPEcyFz-3NDOzIDtw",
+          },
+        ],
+      },
+      {
+        name: "Salil Mittal",
+        role: "Vice President",
+        src: "/images/members/Salil.jpg",
+        socials: [
+          {
+            type: "github",
+            url: "https://github.com/cmd05",
+          },
+        ],
+      },
+      {
+        name: "Ayush Daga",
+        role: "Vice President",
+        src: "https://cdn.discordapp.com/attachments/909449917599195146/982268104887394344/IMG-20210929-WA0006.jpg?width=670&height=670",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/the_ayush_daga/",
+          },
+          {
+            type: "github",
+            url: "https://github.com/Great-Pixel120",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/ayush-daga-341045226/",
+          },
+        ],
+      },
+      {
+        name: "Pratye Aggarwal",
+        role: "Senior Member",
+        src: "/images/members/Pratye.jpg",
+      },
+      {
+        name: "Nikunj Aggarwal",
+        role: "Member",
+        src: "https://media.discordapp.net/attachments/893514358141902858/893514451423203359/Nikunj_Agarwal_11I.jpeg?width=670&height=670",
+      },
+      {
+        name: "Aditya Viraj Garg",
+        role: "Member",
+        src: "/images/members/Aditya.png",
+      },
+    ],
+  },
+  {
     batch: "2021-22",
     people: [
       {
