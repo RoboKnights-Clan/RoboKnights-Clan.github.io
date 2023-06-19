@@ -144,6 +144,11 @@ export const members = [
         role: "Member",
         src: "/images/members/Rihit.jpg",
       },
+      {
+        name: "Rishit Aggarwal",
+        role: "Member",
+        src: "https://media.discordapp.net/attachments/753327283497992356/1119327685588557965/Rishit_Aggarwal_11-E.JPG?width=472&height=620",
+      },
     ],
   },
   {
@@ -168,6 +173,11 @@ export const members = [
         name: "Shaurya Markanda",
         role: "Member",
         src: "/images/members/Shaurya.png",
+      },
+      {
+        name: "Karun Sharma",
+        role: "Member",
+        src: "https://cdn.discordapp.com/attachments/753327283497992356/1103014789057351841/KARUN.jpg",
       },
     ],
   },
