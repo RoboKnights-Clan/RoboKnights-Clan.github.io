@@ -8,25 +8,6 @@ export const members = [
         src: "/images/members/Tanishq.jpg",
       },
       {
-        name: "Garv Jain",
-        role: "Senior Member",
-        src: "/images/members/Garv.jpg",
-        socials: [
-          {
-            type: "github",
-            url: "https://github.com/GarvJain03",
-          },
-          {
-            type: "linkedin",
-            url: "https://www.linkedin.com/in/garv-jain-907aa6218/",
-          },
-          {
-            type: "artstation",
-            url: "https://www.artstation.com/garv_jain03",
-          },
-        ],
-      },
-      {
         name: "Adi Mathur",
         role: "Senior Member",
         src: "/images/members/Adi.png",
