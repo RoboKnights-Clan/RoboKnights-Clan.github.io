@@ -1,11 +1,11 @@
 ---
-title: "How bad Pid tuning can affect an autonomous robot "
+title: "How bad Pid tuning can affect an autonomous robot"
 date: "August 4 2023"
 author: "Arhaan Sharma"
-excerpt: "visual representations on how a well-tuned PID controller can affect the movement of any robot about a certain DOF. "
+excerpt: "Visual representations on how a well-tuned PID controller can affect the movement of any robot about a certain DOF."
 ---
 
-# Optimizing Robot Movement: The Magic of a Well-Tuned PID Controller
+# <span style="color:white">Optimizing Robot Movement: The Magic of a Well-Tuned PID Controller</span>
 
 ![Header Image](https://www.theengineeringconcepts.com/wp-content/uploads/2018/11/PID-CONTROLLER-BLOCK-DIAGRAM.png)
 
