@@ -7,11 +7,6 @@ export const members = [
         role: "Executive",
         src: "/images/members/Tanishq.jpg",
       },
-      
-  
-  {
-    year: "Class 12",
-    members: [
       {
         name: "Tanishq Gogia",
         role: "Senior Member",
