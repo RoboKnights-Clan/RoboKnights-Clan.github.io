@@ -3,6 +3,15 @@ export const members = [
     year: "Class 12",
     members: [
       {
+        name: "Vibhum Aggarwal",
+        role: "Executive",
+        src: "/images/members/Tanishq.jpg",
+      },
+  
+  {
+    year: "Class 12",
+    members: [
+      {
         name: "Tanishq Gogia",
         role: "Senior Member",
         src: "/images/members/Tanishq.jpg",
