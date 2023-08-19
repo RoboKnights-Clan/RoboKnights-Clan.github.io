@@ -5,7 +5,7 @@ export const members = [
       {
         name: "Vibhum Aggarwal",
         role: "Executive",
-        src: "/images/members/Tanishq.jpg",
+        src: "/images/members/Vibhum.jpg",
       },
       {
         name: "Tanishq Gogia",
