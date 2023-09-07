@@ -213,11 +213,15 @@ export const members = [
          socials: [
           {
             type: "github",
-            url: "https://github.com/IDoEverything",
+            url: "https://github.com/arhaan2010",
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/adi-mathur-8725151a9/",
+            url: "https://www.linkedin.com/in/flyby-robotics-90150a27b/",
+          },
+           {
+            type: "instagram",
+            url: "https://www.instagram.com/_arhaan.s_/",
           },
         ],
       },
