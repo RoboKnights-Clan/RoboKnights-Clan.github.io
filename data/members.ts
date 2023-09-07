@@ -176,7 +176,7 @@ export const members = [
       {
         name: "Arhaan Gupta",
         role: "Member",
-        src: "/images/members/Neil.jpeg",
+        src: "/images/members/",
         socials: [
           {
             type: "github",
@@ -209,6 +209,16 @@ export const members = [
         name: "Arhaan Sharma",
         role: "Member",
         src: "/images/members/Arhaan.png",
+         socials: [
+          {
+            type: "github",
+            url: "https://github.com/IDoEverything",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/adi-mathur-8725151a9/",
+          },
+        ],
       },
       {
         name: "Adhiraj Jain",
