@@ -13,6 +13,7 @@ export const members = [
       {
         name: "Tanishq Gogia",
         role: "Senior Member",
+        
         src: "/images/members/Tanishq.jpg",
       },
       {
