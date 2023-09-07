@@ -174,7 +174,7 @@ export const members = [
     year: "Class 9",
     members: [
       {
-        name: "Neil Sindwani",
+        name: "Arhaan Gupta",
         role: "Member",
         src: "/images/members/Neil.jpeg",
         socials: [
