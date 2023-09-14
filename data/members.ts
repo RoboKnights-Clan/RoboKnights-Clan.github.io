@@ -5,6 +5,16 @@ export const members = [
     
     year: "Class 12",
     members: [
+     {
+        name: "Swarnika Bhardwaj",
+        role: "President",
+        src: "/images/members/Swarnika.jpg",
+      },
+      {
+        name: "Jasnoor Kaur",
+        role: "President",
+        src: "/images/members/Jasnoor.png",
+      },
       {
         name: "Vibhum Aggarwal",
         role: "Executive",
@@ -55,11 +65,6 @@ export const members = [
         ],
       },
       {
-        name: "Swarnika Bhardwaj",
-        role: "Senior Member",
-        src: "/images/members/Swarnika.jpg",
-      },
-      {
         name: "Kushagra Goel",
         role: "Senior Member",
         src: "/images/members/Kushagra.png",
@@ -69,11 +74,6 @@ export const members = [
             url: "https://github.com/SilverBullet2005",
           },
         ],
-      },
-      {
-        name: "Jasnoor Kaur",
-        role: "Senior Member",
-        src: "/images/members/Jasnoor.png",
       },
       {
         name: "Aryan Daga",
