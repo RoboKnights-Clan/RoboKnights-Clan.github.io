@@ -1,6 +1,61 @@
 export const achievements = [
+
+   {
+    competition: "Metal Wars event of DMMITS, BVBMV",
+    level: "Interschool",
+    year: "2023",
+    prize: "Second Runners Up",
+  } 
   {
-    competition: " Mindmaze, IIT Delhi's Tryst'22: A Voyage to Zenith",
+    competition: "Battle Bots event of Atlent 2.0, D.A.V. Public School Vasant Kunj",
+    level: "Interschool",
+    year: "2023",
+    prize: "Second Runners Up",
+  } 
+  {
+    competition: "Robowars event of Byte.IT'23, BBPS Pitampura",
+    level: "Interschool",
+    year: "2023",
+    prize: "Winners",
+  } 
+  {
+    competition: "Bomb Neutra-Scythe event of Incognito Mark VII, Somerville School Noida",
+    level: "Interschool",
+    year: "2023",
+    prize: "Winners",
+  } 
+  {
+    competition: "Robosoccer event of Acon 1.0, D.A.V. Public School Sec.-14 Gurugram",
+    level: "Interschool",
+    year: "2022",
+    prize: "Winners",
+  } 
+  {
+    competition: "3D Mania event of Acon 1.0, D.A.V. Public School Sec.-14 Gurugram",
+    level: "Interschool",
+    year: "2022",
+    prize: "Winners",
+  } 
+  {
+    competition: "Sumo Bot event of Discovery, Ryan International Vasant Kunj",
+    level: "Interschool",
+    year: "2022",
+    prize: "Winners",
+  }
+  {
+    competition: "Battle Bot event of Force Fest, Apeejay School Panchsheel Park",
+    level: "Interschool",
+    year: "2022",
+    prize: "Second Runners Up",
+  }
+  {
+    competition: "Beg Borrow Steal event of Robodex, DPS Dwarka",
+    level: "Interschool",
+    year: "2022",
+    prize: "Second Runners Up",
+  }
+  {
+    competition: "Mindmaze, IIT Delhi's Tryst'22: A Voyage to Zenith",
     level: "International",
     year: "2022",
     prize: "Second Runners Up",
@@ -13,7 +68,7 @@ export const achievements = [
   },
   {
     competition:
-      "Robotics event of Silico Battles v17.1, organised by Ahlcon Public School Mayur Vihar",
+      "Robotics event of Silico Battles v17.1, Ahlcon Public School Mayur Vihar",
     level: "Interschool",
     year: "2021",
     prize: "Winners",
@@ -25,8 +80,7 @@ export const achievements = [
     prize: "Winners",
   },
   {
-    competition:
-      "Robotix event of Createch 3.0, Ryan International School Vasant Kunj Annual Tech Symposium",
+    competition: "Robotix event of Createch 3.0, Ryan International School Vasant Kunj Annual Tech Symposium",
     level: "Interschool",
     year: "2021",
     prize: "Winners",
