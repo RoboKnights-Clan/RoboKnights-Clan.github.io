@@ -4,6 +4,7 @@ export const achievements = [
     competition: "Metal Wars event of DMMITS, BVBMV",
     level: "Interschool",
     year: "2023",
+      
     prize: "Second Runners Up",
   } 
   {
