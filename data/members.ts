@@ -39,7 +39,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in/,
+            url: "https://www.linkedin.com/in/",
           },
         ],
       },
@@ -58,7 +58,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -79,7 +79,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -118,7 +118,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -137,7 +137,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -156,7 +156,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -184,11 +184,39 @@ export const members = [
         name: "Shaurya Markanda",
         role: "Member",
         src: "/images/members/Shaurya.png",
+       socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in",
+          },
+        ],
       },
       {
         name: "Karun Sharma",
         role: "Member",
         src: "https://cdn.discordapp.com/attachments/753327283497992356/1103014789057351841/KARUN.jpg",
+       socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in",
+          },
+        ],
       },
     ],
   },
@@ -212,7 +240,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],,
           },
@@ -235,7 +263,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
           },
@@ -261,7 +289,7 @@ export const members = [
           },
           {
             type: "linkedin",
-            url: "https://www.linkedin.com/in,
+            url: "https://www.linkedin.com/in",
           },
         ],
       },
@@ -288,6 +316,20 @@ export const members = [
         name: "Adhiraj Jain",
         role: "Member",
         src: "/images/members/Adhiraj.png",
+       socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in",
+          },
+        ],
       },
     ],
   },
