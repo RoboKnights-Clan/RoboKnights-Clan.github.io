@@ -43,11 +43,6 @@ const MembersPage: NextPage = () => {
         key={index}
       >
         <div className="flex flex-row space-x-4 items-center">
-          <img
-            className="rounded-full aspect-square object-cover object-center w-1/2"
-            src={mem.src}
-            alt={mem.name}
-          />
           <div className="flex flex-col">
             <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
               {mem.name}
