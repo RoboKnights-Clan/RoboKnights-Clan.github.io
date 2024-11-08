@@ -1,13 +1,87 @@
 
 
 export const members = [
+ 
   {
     year: "Class 12",
     members: [
+       {
+        name: "Twamadi Sar",
+        role: "President",
+        src: "/images/members/Mishaa.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/twamadi/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/twamadisar/,
+          },
+        ],
+      },
+     {
+        name: "Shiven Kanodia",
+        role: "Director",
+        src: "/images/members/Mishaa.jpg",
+        socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in/,
+          },
+        ],
+      },
+   {
+        name: "Adhyann Singal",
+        role: "Core Member",
+        src: "/images/members/Adhyann.png",
+         socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
+      },
+      
+
       {
         name: "S. Shrikirti",
         role: "Senior Member",
         src: "/images/members/Shrikirti.png",
+            socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
       },
       {
         name: "Mishaa Kalra",
@@ -28,30 +102,63 @@ export const members = [
           },
         ],
       },
+      
       {
         name: "Mannat Kaur",
         role: "Member",
         src: "/images/members/Mannat.png",
-      },
-      {
-        name: "Adhyann Singal",
-        role: "Member",
-        src: "/images/members/Adhyann.png",
-      },
-      {
-        name: "Shiven Kanodia",
-        role: "Member",
-        src: "/images/members/Shiven.png",
+            socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
       },
       {
         name: "Rihit Wadhwa",
         role: "Member",
         src: "/images/members/Rihit.jpg",
+            socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
       },
       {
         name: "Rishit Aggarwal",
         role: "Member",
         src: "https://media.discordapp.net/attachments/753327283497992356/1119327685588557965/Rishit_Aggarwal_11-E.JPG?width=472&height=620",
+            socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
       },
     ],
   },
@@ -94,8 +201,20 @@ export const members = [
         src: "/images/members/",
         socials: [
           {
+                socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
             type: "github",
-            url: "https://github.com/DumbbAlgo",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],,
           },
         ],
       },
@@ -105,8 +224,20 @@ export const members = [
         src: "/images/members/Agastya.jpg",
         socials: [
           {
-            type: "youtube",
-            url: "https://www.youtube.com/channel/UC2zuMB_VMUwX_gU4lLQ4zLQ",
+                socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
           },
         ],
       },
@@ -119,6 +250,20 @@ export const members = [
         name: "Medhansh Pandya",
         role: "Member",
         src: "/images/members/Medhansh.png",
+            socials: [
+          {
+            type: "instagram",
+            url: "https://www.instagram.com/",
+          },
+          {
+            type: "github",
+            url: "https://github.com",
+          },
+          {
+            type: "linkedin",
+            url: "https://www.linkedin.com/in,
+          },
+        ],
       },
       {
         name: "Arhaan Sharma",
