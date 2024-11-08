@@ -16,27 +16,45 @@ import {
 import { useTheme } from "next-themes";
 import type { NextPage } from "next";
 
+interface Social {
+  type: string;
+  url: string;
+}
+
+interface Member {
+  name: string;
+  role: string;
+  socials?: Social[];
+}
+
+interface MemberGroup {
+  year: number;
+  members: Member[];
+}
+
 const MembersPage: NextPage = () => {
-  let [shownMembers, setMembers] = React.useState(members);
-  let { theme, setTheme } = useTheme();
+  const [shownMembers, setMembers] = React.useState<MemberGroup[]>(members);
+  const { theme, setTheme } = useTheme();
 
   const onSearchBarChange = () => {
     const input = document.getElementById("search") as HTMLInputElement;
-    if (input.value != "") {
+    if (input.value !== "") {
       setMembers(
-        members.map((mem) => {
-          return {
-            year: mem.year,
-            members: mem.members.filter((m) =>
-              m.name.toLowerCase().includes(input.value.toLowerCase())
-            ),
-          };
-        })
+        members.map((mem) => ({
+          year: mem.year,
+          members: Array.isArray(mem.members)
+            ? mem.members.filter((m) =>
+                m.name.toLowerCase().includes(input.value.toLowerCase())
+              )
+            : [],
+        }))
       );
-    } else setMembers(members);
+    } else {
+      setMembers(members);
+    }
   };
 
-  const memberElement = (mem: any, index: number) => {
+  const memberElement = (mem: Member, index: number) => {
     return (
       <div
         className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
@@ -49,43 +67,37 @@ const MembersPage: NextPage = () => {
             </h3>
             <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
             <div className="grid-cols-4 inline-grid grid-flow-row">
-              {mem.socials ? (
-                mem.socials.map((social: any, index: number) => {
-                  return (
-                    <a
-                      key={index}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-dark text-xl mt-2"
-                    >
-                      {social.type == "github" ? (
-                        <FaGithub className="fill-black dark:fill-white" />
-                      ) : social.type == "instagram" ? (
-                        <FaInstagram className="fill-black dark:fill-white" />
-                      ) : social.type == "facebook" ? (
-                        <FaFacebook className="fill-black dark:fill-white" />
-                      ) : social.type == "behance" ? (
-                        <FaBehance className="fill-black dark:fill-white" />
-                      ) : social.type == "medium" ? (
-                        <FaMedium className="fill-black dark:fill-white" />
-                      ) : social.type == "youtube" ? (
-                        <FaYoutube className="fill-black dark:fill-white" />
-                      ) : social.type == "linkedin" ? (
-                        <FaLinkedin className="fill-black dark:fill-white" />
-                      ) : social.type == "spotify" ? (
-                        <FaSpotify className="fill-black dark:fill-white" />
-                      ) : social.type == "artstation" ? (
-                        <FaArtstation className="fill-black dark:fill-white" />
-                      ) : (
-                        <></>
-                      )}
-                    </a>
-                  );
-                })
-              ) : (
-                <></>
-              )}
+              {mem.socials?.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark text-xl mt-2"
+                >
+                  {social.type === "github" ? (
+                    <FaGithub className="fill-black dark:fill-white" />
+                  ) : social.type === "instagram" ? (
+                    <FaInstagram className="fill-black dark:fill-white" />
+                  ) : social.type === "facebook" ? (
+                    <FaFacebook className="fill-black dark:fill-white" />
+                  ) : social.type === "behance" ? (
+                    <FaBehance className="fill-black dark:fill-white" />
+                  ) : social.type === "medium" ? (
+                    <FaMedium className="fill-black dark:fill-white" />
+                  ) : social.type === "youtube" ? (
+                    <FaYoutube className="fill-black dark:fill-white" />
+                  ) : social.type === "linkedin" ? (
+                    <FaLinkedin className="fill-black dark:fill-white" />
+                  ) : social.type === "spotify" ? (
+                    <FaSpotify className="fill-black dark:fill-white" />
+                  ) : social.type === "artstation" ? (
+                    <FaArtstation className="fill-black dark:fill-white" />
+                  ) : (
+                    <></>
+                  )}
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -103,7 +115,6 @@ const MembersPage: NextPage = () => {
           <div className="container">
             <div className="relative">
               <div className="absolute top-4 left-3">
-                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -118,8 +129,7 @@ const MembersPage: NextPage = () => {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-                <i className="fa fa-search text-gray-bf z-20 hover:text-gray-500"></i>{" "}
-              </div>{" "}
+              </div>
               <input
                 id="search"
                 type="text"
@@ -131,25 +141,17 @@ const MembersPage: NextPage = () => {
           </div>
         </div>
         {shownMembers
-          .filter((m) => m.members.length > 0)
-          .map((mem, index) => {
-            return (
-              <div key={index}>
-                <h2
-                  className={
-                    "text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12 font-sansm"
-                  }
-                >
-                  {mem.year}
-                </h2>
-                <div className="grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 grid-cols-1 -m-2">
-                  {mem.members.map((mem, index) => {
-                    return memberElement(mem, index);
-                  })}
-                </div>
+          .filter((m) => m.members?.length > 0)
+          .map((mem, index) => (
+            <div key={index}>
+              <h2 className="text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12 font-sansm">
+                {mem.year}
+              </h2>
+              <div className="grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 grid-cols-1 -m-2">
+                {mem.members?.map((mem, index) => memberElement(mem, index))}
               </div>
-            );
-          })}
+            </div>
+          ))}
       </div>
     </Layout>
   );
