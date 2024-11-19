@@ -368,4 +368,79 @@ export const members = [
       },
     ],
   },
+  {
+    year: "Class 6",
+    members: [
+      {
+        name: "Yadnya Sagar",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "Class 7",
+    members: [
+      {
+        name: "Krishav Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Kiera Singal",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "Class 8",
+    members: [
+      {
+        name: "Devin Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Kush Singh",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Lav Singh",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+    ],
+  },
 ];
