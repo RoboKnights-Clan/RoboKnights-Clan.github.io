@@ -22,7 +22,6 @@ interface Social {
 }
 
 interface Member {
-  id: string; // Assuming members have unique IDs
   name: string;
   role: string;
   socials?: Social[];
@@ -68,9 +67,9 @@ const MembersPage: NextPage = () => {
     }
   };
 
-  const memberElement = (mem: Member) => (
+  const memberElement = (mem: Member, index: number) => (
     <div
-      key={mem.id} // Use unique ID instead of index for the key
+      key={index}  // Use the index as the key
       className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
     >
       <div className="flex flex-row space-x-4 items-center">
@@ -136,13 +135,13 @@ const MembersPage: NextPage = () => {
 
         {shownMembers
           .filter((m) => m.members.length > 0)
-          .map((mem) => (
-            <div key={mem.year}>
+          .map((mem, index) => (
+            <div key={index}>
               <h2 className="text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12">
                 {mem.year}
               </h2>
               <div className="grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 grid-cols-1 -m-2">
-                {mem.members.map(memberElement)}
+                {mem.members.map((member, idx) => memberElement(member, idx))}
               </div>
             </div>
           ))}
