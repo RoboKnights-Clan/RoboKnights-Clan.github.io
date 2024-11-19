@@ -146,6 +146,26 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
+      {
+        name: "Zonish Siddiqui",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Arya Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
     ],
   },
   {
@@ -173,6 +193,16 @@ export const members = [
       },
       {
         name: "Uddhav Oberoi",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Aarav Anand",
         role: "Member",
         src: "",
         socials: [
@@ -227,17 +257,7 @@ export const members = [
         ],
       },
       {
-        name: "Kyraan Katyal",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Ayush Goyal",
+        name: "Aarav Verma",
         role: "Member",
         src: "",
         socials: [
@@ -267,46 +287,6 @@ export const members = [
         ],
       },
       {
-        name: "Rayirth Jaiswal",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Aarav Verma",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Adhiraj Jain",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Showaiz Noor Ahmad",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
         name: "Yuvaan Mangla",
         role: "Member",
         src: "",
@@ -317,47 +297,7 @@ export const members = [
         ],
       },
       {
-        name: "Arnav Gupta",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Aryamman Ojha",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Medhansh Chotrani",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Aditya Kularia",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Anusha Dhawan",
+        name: "Rayirth Jaiswal",
         role: "Member",
         src: "",
         socials: [
@@ -369,10 +309,30 @@ export const members = [
     ],
   },
   {
-    year: "Class 6",
+    year: "Class 8",
     members: [
       {
-        name: "Yadnya Sagar",
+        name: "Devin Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Kush Singh",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Lav Singh",
         role: "Member",
         src: "",
         socials: [
@@ -409,30 +369,10 @@ export const members = [
     ],
   },
   {
-    year: "Class 8",
+    year: "Class 6",
     members: [
       {
-        name: "Devin Jain",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Kush Singh",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
-        ],
-      },
-      {
-        name: "Lav Singh",
+        name: "Yadnya Sagar",
         role: "Member",
         src: "",
         socials: [
