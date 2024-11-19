@@ -29,7 +29,7 @@ interface Member {
 }
 
 interface MemberGroup {
-  year: number;
+  year: string | number; // Allow both string and number for 'year'
   members: Member[];
 }
 
