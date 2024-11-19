@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout/Layout";
 import { members } from "../data/members";
 import {
@@ -22,6 +22,7 @@ interface Social {
 }
 
 interface Member {
+  id: string; // Assuming members have unique IDs
   name: string;
   role: string;
   socials?: Social[];
@@ -33,83 +34,74 @@ interface MemberGroup {
 }
 
 const MembersPage: NextPage = () => {
-  const [shownMembers, setMembers] = React.useState<MemberGroup[]>(members);
+  const [shownMembers, setMembers] = useState<MemberGroup[]>(members);
   const { theme, setTheme } = useTheme();
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const onSearchBarChange = () => {
-    const input = document.getElementById("search") as HTMLInputElement;
-    if (input.value !== "") {
+  const socialIcons: { [key: string]: JSX.Element } = {
+    github: <FaGithub />,
+    instagram: <FaInstagram />,
+    facebook: <FaFacebook />,
+    behance: <FaBehance />,
+    medium: <FaMedium />,
+    youtube: <FaYoutube />,
+    linkedin: <FaLinkedin />,
+    spotify: <FaSpotify />,
+    artstation: <FaArtstation />,
+  };
+
+  const onSearchBarChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value.toLowerCase();
+    setSearchQuery(query);
+
+    if (query) {
       setMembers(
         members.map((mem) => ({
           year: mem.year,
-          members: Array.isArray(mem.members)
-            ? mem.members.filter((m) =>
-                m.name.toLowerCase().includes(input.value.toLowerCase())
-              )
-            : [],
+          members: mem.members.filter((m) =>
+            m.name.toLowerCase().includes(query)
+          ),
         }))
       );
     } else {
-      setMembers(members);
+      setMembers(members); // Reset when input is cleared
     }
   };
 
-  const memberElement = (mem: Member, index: number) => {
-    return (
-      <div
-        className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
-        key={index}
-      >
-        <div className="flex flex-row space-x-4 items-center">
-          <div className="flex flex-col">
-            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
-              {mem.name}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
-            <div className="grid-cols-4 inline-grid grid-flow-row">
-              {mem.socials?.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark text-xl mt-2"
-                >
-                  {social.type === "github" ? (
-                    <FaGithub className="fill-black dark:fill-white" />
-                  ) : social.type === "instagram" ? (
-                    <FaInstagram className="fill-black dark:fill-white" />
-                  ) : social.type === "facebook" ? (
-                    <FaFacebook className="fill-black dark:fill-white" />
-                  ) : social.type === "behance" ? (
-                    <FaBehance className="fill-black dark:fill-white" />
-                  ) : social.type === "medium" ? (
-                    <FaMedium className="fill-black dark:fill-white" />
-                  ) : social.type === "youtube" ? (
-                    <FaYoutube className="fill-black dark:fill-white" />
-                  ) : social.type === "linkedin" ? (
-                    <FaLinkedin className="fill-black dark:fill-white" />
-                  ) : social.type === "spotify" ? (
-                    <FaSpotify className="fill-black dark:fill-white" />
-                  ) : social.type === "artstation" ? (
-                    <FaArtstation className="fill-black dark:fill-white" />
-                  ) : (
-                    <></>
-                  )}
-                </a>
-              ))}
-            </div>
+  const memberElement = (mem: Member) => (
+    <div
+      key={mem.id} // Use unique ID instead of index for the key
+      className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
+    >
+      <div className="flex flex-row space-x-4 items-center">
+        <div className="flex flex-col">
+          <h3 className="text-xl font-medium text-dark dark:text-white">
+            {mem.name}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
+          <div className="grid-cols-4 inline-grid grid-flow-row">
+            {mem.socials?.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark text-xl mt-2"
+              >
+                {socialIcons[social.type.toLowerCase()]}
+              </a>
+            ))}
           </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
 
   return (
     <Layout title="Members">
       <div className="container mx-auto md:px-10 px-5 py-12">
         <div className="flex flex-col w-full">
-          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-gray-e9 font-sanssm">
+          <h1 className="sm:text-4xl text-3xl font-bold mb-4 text-dark dark:text-gray-e9">
             Members
           </h1>
           <div className="container">
@@ -133,22 +125,24 @@ const MembersPage: NextPage = () => {
               <input
                 id="search"
                 type="text"
+                value={searchQuery}
+                onChange={onSearchBarChange}
                 className="h-14 w-64 pl-10 pr-20 z-0 focus:shadow focus:outline-none border-2 p-2 rounded-md border-black dark:border-white text-gray-bf"
                 placeholder="Search members"
-                onInput={onSearchBarChange}
               />
             </div>
           </div>
         </div>
+
         {shownMembers
-          .filter((m) => m.members?.length > 0)
-          .map((mem, index) => (
-            <div key={index}>
-              <h2 className="text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12 font-sansm">
+          .filter((m) => m.members.length > 0)
+          .map((mem) => (
+            <div key={mem.year}>
+              <h2 className="text-dark dark:text-gray-e9 font-medium text-3xl pb-6 pt-12">
                 {mem.year}
               </h2>
               <div className="grid grid-flow-row lg:grid-cols-3 md:grid-cols-2 grid-cols-1 -m-2">
-                {mem.members?.map((mem, index) => memberElement(mem, index))}
+                {mem.members.map(memberElement)}
               </div>
             </div>
           ))}
