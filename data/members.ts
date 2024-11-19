@@ -236,74 +236,135 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-    ],
-  },
-  {
-    year: "Class 8",
-    members: [
       {
-        name: "Devin Jain",
+        name: "Ayush Goyal",
         role: "Member",
         src: "",
         socials: [
-          { type: "instagram", url: "https://www.instagram.com" },
+          { type: "instagram", url: "https://www.instagram.com/" },
           { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
       },
       {
-        name: "Kush Singh",
-        role: "Member",
-        src: "",
-        socials: [ 
-          { type: "instagram", url: "https://www.instagram.com" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
-      },
-      {
-        name: "Lav Singh",
-        role: "Member",
-        src: "",
-        socials: [ 
-          { type: "instagram", url: "https://www.instagram.com" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
-      },
-    ],
-  },
-  {
-    year: "Class 7",
-    members: [
-      {
-        name: "Krishav Jain",
-        role: "Member",
-        src: "",
-        socials: [ 
-          { type: "instagram", url: "https://www.instagram.com" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
-      },
-      {
-        name: "Kiera Singal",
+        name: "Animikha Bagchi",
         role: "Member",
         src: "",
         socials: [
-          { type: "instagram", url: "https://www.instagram.com" },
+          { type: "instagram", url: "https://www.instagram.com/" },
           { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
       },
-    ],
-  },
-  {
-    year: "Class 6",
-    members: [
       {
-        name: "Yadnya Sagar",
+        name: "Naitik Jindal",
         role: "Member",
         src: "",
-        socials: [ 
-          { type: "instagram", url: "https://www.instagram.com" },
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
           { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/" },],
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Rayirth Jaiswal",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Aarav Verma",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Adhiraj Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Showaiz Noor Ahmad",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Yuvaan Mangla",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Arnav Gupta",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Aryamman Ojha",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Medhansh Chotrani",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Aditya Kularia",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Anusha Dhawan",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
       },
     ],
   },
