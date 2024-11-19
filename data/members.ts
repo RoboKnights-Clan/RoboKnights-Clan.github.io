@@ -130,7 +130,11 @@ export const members = [
           { type: "instagram", url: "https://www.instagram.com/" },
           { type: "github", url: "https://github.com" },
           { type: "linkedin", url: "https://www.linkedin.com/in" },
-      {
+        ],
+      },
+    ],
+  },
+  {
     year: "Class 10",
     members: [
       {
