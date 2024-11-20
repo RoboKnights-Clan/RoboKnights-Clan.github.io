@@ -34,7 +34,7 @@ export const members = [
       },
       {
         name: "S. Shrikirti",
-        role: "Senior Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -89,7 +89,7 @@ export const members = [
     members: [
       {
         name: "Yuvraj Matta",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "youtube", url: "https://m.youtube.com/channel/UCqr9DHvhR0r-JIoutyNFhxg" },
@@ -98,7 +98,7 @@ export const members = [
       },
       {
         name: "Shaurya Markanda",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -118,7 +118,7 @@ export const members = [
       },
       {
         name: "Aayush Gaur",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -193,7 +193,7 @@ export const members = [
       },
       {
         name: "Uddhav Oberoi",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -227,8 +227,18 @@ export const members = [
     year: "Class 9",
     members: [
       {
+        name: "Arhaan Sharma",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "github", url: "https://github.com/arhaan2010" },
+          { type: "linkedin", url: "https://www.linkedin.com/in/arhaan-sharma-9510b7313/" },
+          { type: "instagram", url: "https://www.instagram.com/_arhaan.s_/" },
+        ],
+      },
+      {
         name: "Medhansh Pandya",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -236,19 +246,10 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-      {
-        name: "Arhaan Sharma",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "github", url: "https://github.com/arhaan2010" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/flyby-robotics-90150a27b/" },
-          { type: "instagram", url: "https://www.instagram.com/_arhaan.s_/" },
-        ],
-      },
+      
       {
         name: "Adhiraj Jain",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
