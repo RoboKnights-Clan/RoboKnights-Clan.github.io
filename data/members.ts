@@ -237,6 +237,16 @@ export const members = [
         ],
       },
       {
+        name: "Aryaman Ohja",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
         name: "Medhansh Pandya",
         role: "Core Member",
         src: "",
