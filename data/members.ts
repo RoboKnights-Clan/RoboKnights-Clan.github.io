@@ -8,7 +8,7 @@ export const members = [
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/twamadi/" },
-          { type: "github", url: "https://github.com" },
+          { type: "github", url: "https://github.com/Twamadi" },
           { type: "linkedin", url: "https://www.linkedin.com/in/twamadisar/" },
         ],
       },
