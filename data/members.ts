@@ -237,7 +237,7 @@ export const members = [
         ],
       },
       {
-        name: "Aryaman Ohja",
+        name: "Aryamman Ohja",
         role: "Core Member",
         src: "",
         socials: [
