@@ -88,7 +88,7 @@ export const alumni = [
     batch: "2023-24",
     people: [
       {
-        name: "Swarnika Bhardwaj",
+       name: "Swarnika Bhardwaj",
         role: "President",
         src: "/images/members/Swarnika.jpg",
         socials: [
@@ -98,7 +98,7 @@ export const alumni = [
           },
         ],
       },
-     ],
+    ],
   },
   {
     batch: "2022-23",
