@@ -242,6 +242,7 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
+      ],
       {
      
         year: "Class 9",
