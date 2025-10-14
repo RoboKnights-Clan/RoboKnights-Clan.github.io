@@ -1,5 +1,90 @@
 export const alumni = [
-  {
+   batch: "2024-2025"
+  people:[
+      {
+        name: "Twamadi Sar",
+        role: "President",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/twamadi/" },
+          { type: "github", url: "https://github.com/Twamadi" },
+          { type: "linkedin", url: "https://www.linkedin.com/in/twamadisar/" },
+        ],
+      },
+      {
+        name: "Shiven Kanodia",
+        role: "Director",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in/" },
+        ],
+      },
+      {
+        name: "Adhyann Singal",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "S. Shrikirti",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Mishaa Kalra",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/mishaa1109/" },
+          { type: "github", url: "https://github.com/Mishaa1109" },
+          { type: "linkedin", url: "https://www.linkedin.com/in/mishaa-kalra-513772222/" },
+        ],
+      },
+      {
+        name: "Mannat Kaur",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Rihit Wadhwa",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Rishit Aggarwal",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+    ],
+  
+  
+  
     batch: "2023-24",
     people: [
       {
