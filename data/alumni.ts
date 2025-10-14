@@ -1,7 +1,7 @@
 export const alumni = [
- {
- batch: "2024-2025",
-  people:[
+  {
+    batch: "2024-2025",
+    people: [
       {
         name: "Twamadi Sar",
         role: "President",
@@ -82,10 +82,7 @@ export const alumni = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-    ],
-  
-  
-  
+    {
     batch: "2023-24",
     people: [
       {
