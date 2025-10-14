@@ -82,6 +82,8 @@ export const alumni = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
+    ],
+  },
     {
     batch: "2023-24",
     people: [
