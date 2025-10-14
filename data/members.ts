@@ -242,10 +242,11 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-      ],
-      {
+     ],
+  },
+{
      
-        year: "Class 9",
+  year: "Class 9",
     members: [
       {
         name: "Devin Jain",
