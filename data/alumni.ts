@@ -1,5 +1,5 @@
 export const alumni = [
-   batch: "2024-2025"
+ batch: "2024-2025",
   people:[
       {
         name: "Twamadi Sar",
