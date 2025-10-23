@@ -46,7 +46,7 @@ const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <> <header className="sticky top-0 z-50 bg-white dark:bg-dark shadow-[0_2px_8px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+    <> <header className="sticky top-0 z-50 bg-white dark:bg-dark">
         <div className="flex p-5 lg:items-center">
           <Link href="/">
             <a className="text-2xl font-medium text-dark dark:text-white">

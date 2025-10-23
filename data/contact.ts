@@ -13,9 +13,9 @@ export interface Social {
 export const contacts: ContactPerson[] = [
   {
     name: "Mr Ajith Kumar",
-    role: "Teacher In-Charge",
+    role: "Head,RoboKnights",
     email: "ajithkumarkg@dpsrkp.net",
-    remark: "Head,RoboKnights",
+    remark: "Teacher In-Charge",
   },
   {
     name: "Mr. Mukesh Kumar",
