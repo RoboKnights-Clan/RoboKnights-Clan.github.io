@@ -54,6 +54,12 @@ export const contacts: ContactPerson[] = [
     email: "adhiraj@dpsrkp.net",
     remark: "Specialises in Arduino and 3D Design.",
   },
+   {
+    name: "Naitik Jindal",
+    role: "Executive",
+    email: "Naitik@dpsrkp.net",
+    remark: "Specialises in event planning and management.",
+  },
 
 ];
 
