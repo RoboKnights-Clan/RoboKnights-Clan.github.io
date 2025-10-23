@@ -36,7 +36,7 @@ const AboutPage: NextPage = () => {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="/images/about_hero.png"
+            src="/images/inductions_hero.png"
           />
         </div>
       </div>
