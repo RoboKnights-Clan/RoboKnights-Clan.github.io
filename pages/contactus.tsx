@@ -29,7 +29,7 @@ const ContactPage: NextPage = () => {
             <p className="text-gray-700 dark:text-gray-300 font-sansm">
               Have a question or want to collaborate? Reach out to us at:
             </p>
-            <p className="font-medium text-primary dark:text-primary-dark text-lg">contact@roboknights.in</p>
+            <p className="font-medium text-primary dark:text-primary-dark text-lg">roboknights@dpsrkp.net</p>
             <p className="text-gray-700 dark:text-gray-300 font-sanssm mt-2">
               We usually respond within 24–48 hours.
             </p>
