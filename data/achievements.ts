@@ -1,15 +1,15 @@
 export const achievements = [
   { competition: "IGNITE 2025 Robowar",
-     level: "Interschool", 
+     level: "National", 
      year: "2025",
       prize: "Third" },
   { competition: "IGNITE 2025 Roborace",
-     level: "Interschool",
+     level: "National",
       year: "2025",
        prize: "Second"
        },
   { competition: "IGNITE 2025",
-     level: "Interschool",
+     level: "National",
       year: "2025",
        prize: "Third" },
   { competition: "IGNITE 2025 Drone Race",
