@@ -57,91 +57,75 @@ const MembersPage: NextPage = () => {
     }
   };
 
-  const memberElement = (mem: Member, index: number) => {
-    return (
-      <div
-         className="relative group w-[95%] h-48 border-2 border-black dark:border-white m-2 rounded-xl
-             transition-transform duration-300 ease-out
-             hover:border-blue-500 dark:hover:border-blue-400
-             [transform-style:preserve-3d] cursor-pointer overflow-hidden"
-  onMouseMove={(e) => {
-    const card = e.currentTarget as HTMLDivElement;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const rotateX = (y - rect.height / 2) / 7;   // stronger tilt (was /15)
-    const rotateY = (rect.width / 2 - x) / 7;    // stronger tilt (was /15)
-    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.07)`;
-    const light = card.querySelector(".light") as HTMLDivElement;
-    if (light)
-      light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
-  }}
-  onMouseLeave={(e) => {
-    const card = e.currentTarget as HTMLDivElement;
-    card.style.transform = "perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)";
-    const light = card.querySelector(".light") as HTMLDivElement;
-    if (light) light.style.background = "none";
-  }}
-        key={index}
-      > 
-    {/* Dynamic lighting overlay */}
+ const memberElement = (mem: Member, index: number) => {
+  return (
+    <div
+      key={index}
+      className="relative group w-[95%] h-48 border-2 border-black dark:border-white m-2 rounded-xl
+                 transition-transform duration-300 ease-out
+                 hover:border-blue-500 dark:hover:border-blue-400
+                 [transform-style:preserve-3d] cursor-pointer overflow-hidden"
+      onMouseMove={(e) => {
+        const card = e.currentTarget as HTMLDivElement;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const rotateX = (y - rect.height / 2) / 7;
+        const rotateY = (rect.width / 2 - x) / 7;
+        card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.07)`;
+        const light = card.querySelector(".light") as HTMLDivElement;
+        if (light)
+          light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
+      }}
+      onMouseLeave={(e) => {
+        const card = e.currentTarget as HTMLDivElement;
+        card.style.transform = "perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)";
+        const light = card.querySelector(".light") as HTMLDivElement;
+        if (light) light.style.background = "none";
+      }}
+    >
+      {/* Lighting Overlay */}
       <div className="light absolute inset-0 rounded-xl pointer-events-none transition-all duration-200 mix-blend-screen opacity-80"></div>
 
-      {/* Flip container */}
-      <div className="absolute inset-0 transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-
-  
-         <div className="flex flex-row space-x-4 items-center px-4 backface-hidden">
-          <div className="flex flex-col">
-            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
-              {mem.name}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-e9 font-sansm">{mem.role}</p>
-            <div className="grid-cols-4 inline-grid grid-flow-row">
-              {mem.socials?.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark text-xl mt-2"
-                >
-                  {social.type === "github" ? (
-                    <FaGithub className="fill-black dark:fill-white" />
-                  ) : social.type === "instagram" ? (
-                    <FaInstagram className="fill-black dark:fill-white" />
-                  ) : social.type === "facebook" ? (
-                    <FaFacebook className="fill-black dark:fill-white" />
-                  ) : social.type === "behance" ? (
-                    <FaBehance className="fill-black dark:fill-white" />
-                  ) : social.type === "medium" ? (
-                    <FaMedium className="fill-black dark:fill-white" />
-                  ) : social.type === "youtube" ? (
-                    <FaYoutube className="fill-black dark:fill-white" />
-                  ) : social.type === "linkedin" ? (
-                    <FaLinkedin className="fill-black dark:fill-white" />
-                  ) : social.type === "spotify" ? (
-                    <FaSpotify className="fill-black dark:fill-white" />
-                  ) : social.type === "artstation" ? (
-                    <FaArtstation className="fill-black dark:fill-white" />
-                  ) : (
-                    <></>
-                  )}
-                </a>
-              ))}
-            </div>
+      {/* Front Face */}
+      <div className="absolute inset-0 backface-hidden flex flex-row space-x-4 items-center px-4">
+        <div className="flex flex-col">
+          <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">{mem.name}</h3>
+          <p className="text-gray-600 dark:text-gray-e9 font-sansm">{mem.role}</p>
+          <div className="grid-cols-4 inline-grid grid-flow-row mt-2">
+            {mem.socials?.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark text-xl"
+              >
+                {social.type === "github" && <FaGithub className="fill-black dark:fill-white" />}
+                {social.type === "instagram" && <FaInstagram className="fill-black dark:fill-white" />}
+                {social.type === "facebook" && <FaFacebook className="fill-black dark:fill-white" />}
+                {social.type === "behance" && <FaBehance className="fill-black dark:fill-white" />}
+                {social.type === "medium" && <FaMedium className="fill-black dark:fill-white" />}
+                {social.type === "youtube" && <FaYoutube className="fill-black dark:fill-white" />}
+                {social.type === "linkedin" && <FaLinkedin className="fill-black dark:fill-white" />}
+                {social.type === "spotify" && <FaSpotify className="fill-black dark:fill-white" />}
+                {social.type === "artstation" && <FaArtstation className="fill-black dark:fill-white" />}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-       <div className="absolute inset-0 backface-hidden [transform:rotateY(180deg)] flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-xl shadow-inner px-3">
-      <p className="text-center text-base italic font-light">
-        “{mem.trait ?? 'Driven by innovation and teamwork.'}”
-      </p>
-      </div>
 
-     </div>
+      {/* Back Face */}
+      <div className="absolute inset-0 backface-hidden [transform:rotateY(180deg)] flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-xl shadow-inner px-3">
+        <p className="text-center text-base italic font-light">
+          “{mem.trait ?? 'Driven by innovation and teamwork.'}”
+        </p>
+      </div>
     </div>
-    );
-  };
+  );
+};
+
   
 
   return (
