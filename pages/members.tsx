@@ -58,7 +58,12 @@ const MembersPage: NextPage = () => {
   const memberElement = (mem: Member, index: number) => {
     return (
       <div
-        className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md"
+        className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md
+             transform transition-all duration-300 ease-in-out
+             hover:-translate-y-2 hover:scale-[1.02]
+             hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)]
+             dark:hover:shadow-[0_8px_25px_rgba(255,255,255,0.1)]
+             hover:border-blue-500 dark:hover:border-blue-400"
         key={index}
       >
         <div className="flex flex-row space-x-4 items-center">
