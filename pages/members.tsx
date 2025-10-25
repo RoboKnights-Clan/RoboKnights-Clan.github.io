@@ -58,36 +58,46 @@ const MembersPage: NextPage = () => {
   };
 
 const memberElement = (mem: Member, index: number) => {
+  const [flipped, setFlipped] = React.useState(false);
+
   return (
     <div
       key={index}
-      className="relative group w-[95%] h-48 m-2 perspective-[1000px] cursor-pointer"
+      className="relative group w-[95%] h-48 border-2 border-black dark:border-white m-2 rounded-xl transition-transform duration-300 ease-out [transform-style:preserve-3d] cursor-pointer overflow-hidden perspective-[1000px]"
       onMouseMove={(e) => {
-        const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rotateX = (y - rect.height / 2) / 7;
-        const rotateY = (rect.width / 2 - x) / 7;
-        if (card) card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
-        if (light)
-          light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
+        if (!flipped) {
+          const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
+          const rect = e.currentTarget.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const rotateX = (y - rect.height / 2) / 7;
+          const rotateY = (rect.width / 2 - x) / 7;
+          if (card) card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+          const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
+          if (light)
+            light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
+        }
       }}
       onMouseLeave={(e) => {
-        const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
-        if (card) card.style.transform = 'rotateX(0deg) rotateY(0deg)';
-        const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
-        if (light) light.style.background = 'none';
+        if (!flipped) {
+          const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
+          if (card) card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+          const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
+          if (light) light.style.background = 'none';
+        }
       }}
+      onClick={() => setFlipped(!flipped)}
     >
       {/* Dynamic lighting overlay */}
       <div className="light absolute inset-0 rounded-xl pointer-events-none transition-all duration-200 mix-blend-screen opacity-80"></div>
 
-      {/* Card inner: handles flip */}
-      <div className="card-inner w-full h-full relative transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      {/* Card inner: flip controlled by state */}
+      <div
+        className={`card-inner w-full h-full relative transition-transform duration-700 [transform-style:preserve-3d]`}
+        style={{ transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
+      >
         {/* Front */}
-        <div className="absolute inset-0 [backface-visibility:hidden] border-2 border-black dark:border-white rounded-xl flex flex-col p-4 bg-transparent">
+        <div className="absolute inset-0 [backface-visibility:hidden] flex flex-col p-4">
           <h3 className="text-xl font-medium text-dark dark:text-white">{mem.name}</h3>
           <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
           <div className="grid-cols-4 inline-grid grid-flow-row mt-2">
@@ -133,6 +143,7 @@ const memberElement = (mem: Member, index: number) => {
     </div>
   );
 };
+
 
 
   
