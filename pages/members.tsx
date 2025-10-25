@@ -91,7 +91,7 @@ const MembersPage: NextPage = () => {
       <div className="absolute inset-0 transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
   
-         <div className="absolute inset-0 backface-hidden [transform:rotateY(0deg)] flex flex-row space-x-4 items-center px-4">
+         <div className="flex flex-row space-x-4 items-center px-4 backface-hidden">
           <div className="flex flex-col">
             <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
               {mem.name}
