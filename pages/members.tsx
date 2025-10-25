@@ -58,14 +58,25 @@ const MembersPage: NextPage = () => {
   const memberElement = (mem: Member, index: number) => {
     return (
       <div
-        className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md
-             transform transition-all duration-300 ease-in-out
-             hover:-translate-y-2 hover:scale-[1.02]
-             hover:shadow-[0_8px_20px_rgba(0,0,0,0.2)]
-             dark:hover:shadow-[0_8px_25px_rgba(255,255,255,0.1)]
-             hover:border-blue-500 dark:hover:border-blue-400"
+         className="p-2 w-[95%] border-2 border-black dark:border-white px-3 m-2 py-4 rounded-md
+             transition-transform duration-300 ease-out
+             hover:border-blue-500 dark:hover:border-blue-400
+             hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)]
+             dark:hover:shadow-[0_8px_25px_rgba(255,255,255,0.1)]"
+  onMouseMove={(e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const rotateX = (y - rect.height / 2) / 15;
+    const rotateY = (rect.width / 2 - x) / 15;
+    card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)";
+  }}
         key={index}
-      >
+      > 
         <div className="flex flex-row space-x-4 items-center">
           <div className="flex flex-col">
             <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">
