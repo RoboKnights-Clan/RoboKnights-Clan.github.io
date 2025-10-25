@@ -61,57 +61,70 @@ const memberElement = (mem: Member, index: number) => {
   return (
     <div
       key={index}
-      className="relative group w-[95%] h-48 border-2 border-black dark:border-white m-2 rounded-xl
-                 cursor-pointer perspective-[1000px] overflow-hidden"
+      className="relative group w-[95%] h-48 m-2 perspective-[1000px] cursor-pointer"
       onMouseMove={(e) => {
         const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
-        if (!card) return;
         const rect = e.currentTarget.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         const rotateX = (y - rect.height / 2) / 7;
         const rotateY = (rect.width / 2 - x) / 7;
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        if (card) card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
-        if (light) light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
+        if (light)
+          light.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.55), rgba(0,0,0,0.05) 80%)`;
       }}
       onMouseLeave={(e) => {
         const card = e.currentTarget.querySelector('.card-inner') as HTMLDivElement;
-        if (card) card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        if (card) card.style.transform = 'rotateX(0deg) rotateY(0deg)';
         const light = e.currentTarget.querySelector('.light') as HTMLDivElement;
         if (light) light.style.background = 'none';
       }}
     >
-      {/* Lighting overlay */}
+      {/* Dynamic lighting overlay */}
       <div className="light absolute inset-0 rounded-xl pointer-events-none transition-all duration-200 mix-blend-screen opacity-80"></div>
 
-      {/* Flip container */}
-      <div className="card-inner relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:rotate-y-180">
-        {/* Front face */}
-        <div className="absolute inset-0 backface-hidden flex flex-row items-center space-x-4 px-4">
-          <div className="flex flex-col">
-            <h3 className="text-xl font-medium text-dark dark:text-white font-sanssm">{mem.name}</h3>
-            <p className="text-gray-600 dark:text-gray-e9 font-sansm">{mem.role}</p>
-            <div className="grid-cols-4 inline-grid grid-flow-row mt-2">
-              {mem.socials?.map((social, idx) => (
-                <a key={idx} href={social.url} target="_blank" rel="noopener noreferrer" className="text-dark text-xl">
-                  {social.type === "github" && <FaGithub className="fill-black dark:fill-white" />}
-                  {social.type === "instagram" && <FaInstagram className="fill-black dark:fill-white" />}
-                  {social.type === "facebook" && <FaFacebook className="fill-black dark:fill-white" />}
-                  {social.type === "behance" && <FaBehance className="fill-black dark:fill-white" />}
-                  {social.type === "medium" && <FaMedium className="fill-black dark:fill-white" />}
-                  {social.type === "youtube" && <FaYoutube className="fill-black dark:fill-white" />}
-                  {social.type === "linkedin" && <FaLinkedin className="fill-black dark:fill-white" />}
-                  {social.type === "spotify" && <FaSpotify className="fill-black dark:fill-white" />}
-                  {social.type === "artstation" && <FaArtstation className="fill-black dark:fill-white" />}
-                </a>
-              ))}
-            </div>
+      {/* Card inner: handles flip */}
+      <div className="card-inner w-full h-full relative transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        {/* Front */}
+        <div className="absolute inset-0 [backface-visibility:hidden] border-2 border-black dark:border-white rounded-xl flex flex-col p-4 bg-transparent">
+          <h3 className="text-xl font-medium text-dark dark:text-white">{mem.name}</h3>
+          <p className="text-gray-600 dark:text-gray-e9">{mem.role}</p>
+          <div className="grid-cols-4 inline-grid grid-flow-row mt-2">
+            {mem.socials?.map((social, i) => (
+              <a
+                key={i}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-dark text-xl mt-2"
+              >
+                {social.type === 'github' ? (
+                  <FaGithub className="fill-black dark:fill-white" />
+                ) : social.type === 'instagram' ? (
+                  <FaInstagram className="fill-black dark:fill-white" />
+                ) : social.type === 'facebook' ? (
+                  <FaFacebook className="fill-black dark:fill-white" />
+                ) : social.type === 'behance' ? (
+                  <FaBehance className="fill-black dark:fill-white" />
+                ) : social.type === 'medium' ? (
+                  <FaMedium className="fill-black dark:fill-white" />
+                ) : social.type === 'youtube' ? (
+                  <FaYoutube className="fill-black dark:fill-white" />
+                ) : social.type === 'linkedin' ? (
+                  <FaLinkedin className="fill-black dark:fill-white" />
+                ) : social.type === 'spotify' ? (
+                  <FaSpotify className="fill-black dark:fill-white" />
+                ) : social.type === 'artstation' ? (
+                  <FaArtstation className="fill-black dark:fill-white" />
+                ) : null}
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* Back face */}
-        <div className="absolute inset-0 backface-hidden rotate-y-180 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-xl shadow-inner px-3">
+        {/* Back */}
+        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-xl shadow-inner p-3">
           <p className="text-center text-base italic font-light">
             “{mem.trait ?? 'Driven by innovation and teamwork.'}”
           </p>
