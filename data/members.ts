@@ -13,8 +13,8 @@ export const members = [
         ],
       },
        {
-        name: "Aayush Gaur",
-        role: "Vice President",
+        name: "Abhinav Singh",
+        role: "President",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -29,16 +29,6 @@ export const members = [
         socials: [
           { type: "youtube", url: "https://m.youtube.com/channel/UCqr9DHvhR0r-JIoutyNFhxg" },
           { type: "linkedin", url: "https://www.linkedin.com/in/yuvraj-matta-131764220" },
-        ],
-      },
-      {
-        name: "Abhinav Singh",
-        role: "Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
       {
