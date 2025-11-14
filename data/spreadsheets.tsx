@@ -11,7 +11,7 @@ export const spreadsheets = [
     url: "https://docs.google.com/spreadsheets/d/1056zsk6qjHg8TwSRMsnPlvdkzPY-6hsaekKL1jdF0Tc/edit?usp=sharing",
   },
   {
-    slug: "budget",
+    slug: "coc",
     name: "RK Annual Budget",
     url: "https://docs.google.com/spreadsheets/d/3ghiLMN789/edit",
   },
