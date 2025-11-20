@@ -156,7 +156,7 @@ export const members = [
         role: "Core Member",
         src: "",
         socials: [
-          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "instagram", url: "https://www.instagram.com/ojharyamman" },
           { type: "github", url: "https://github.com" },
           { type: "linkedin", url: "https://www.linkedin.com" },
         ],
