@@ -1,6 +1,6 @@
 export const members = [
   {
-    year: "Class 12 (25-26)",
+    year: "Class 12",
     members: [
        {
         name: "Shaurya Markanda",
@@ -84,7 +84,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 12",
+    year: "Class 11",
     members: [
       {
         name: "Arhaan Gupta",
@@ -139,7 +139,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 11",
+    year: "Class 10",
     members: [
       {
         name: "Arhaan Sharma",
@@ -174,7 +174,7 @@ export const members = [
       
       {
         name: "Adhiraj Jain",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -286,7 +286,7 @@ export const members = [
   },
 {
      
-  year: "Class 10",
+  year: "Class 9",
     members: [
       {
         name: "Devin Jain",
@@ -321,7 +321,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 9",
+    year: "Class 8",
     members: [
       {
         name: "Krishav Jain",
@@ -346,7 +346,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 8",
+    year: "Class 7",
     members: [
       {
         name: "Yadnya Sagar",
