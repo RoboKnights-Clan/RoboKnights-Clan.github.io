@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/seedfirebase.js"
-  ],
+, "pages/pages.jsx"  ],
   "exclude": [
     "node_modules"
   ]
