@@ -15,19 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-<<<<<<< HEAD
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "components/seedfirebase.js"
-, "pages/pages.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
-=======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
->>>>>>> parent of 81923ee (added an inventory system)
 }
- 
