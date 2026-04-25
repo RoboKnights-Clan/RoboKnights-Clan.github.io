@@ -16,7 +16,7 @@ export const spreadsheets = [
     url: "https://partsinventorychanged.vercel.app/",
   },
   {
-    slug: "evnts",
+    slug: "events",
     name: "RK Annual Budget",
     url: "https://event-management-system-psi-olive.vercel.app",
   },
