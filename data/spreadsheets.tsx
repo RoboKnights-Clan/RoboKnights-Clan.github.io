@@ -20,4 +20,9 @@ export const spreadsheets = [
     name: "RK Annual Budget",
     url: "https://event-management-system-psi-olive.vercel.app",
   },
+  {
+    slug: "orientation2026",
+    name: "Roboknights Orientation 2026",
+    url: "https://forms.gle/KF5bTcXTatWR9YDR8",
+  }
 ];

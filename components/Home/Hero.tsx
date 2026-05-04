@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className="container mx-auto lg:px-24 flex px-5 py-12 md:flex-row flex-col items-center text-dark">
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-dark dark:text-white mb-8 leading-tight">
-            Celebrating 23 Years of RoboKnights
-          </h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-dark dark:text-white mb-8 leading-tight">
+          Celebrating 24 Years of RoboKnights
+        </h1>
         <p className="mb-8 leading-relaxed dark:text-gray-c8">
           The Robotics Club of Delhi Public School R.K. Puram
         </p>

@@ -19,7 +19,7 @@ const Modal = ({ videoId, image, name }) => {
         className="bg-black font-bold text-white py-4 w-full lg:w-3/4 text-xl rounded-b-md hover:bg-dark transition duration-200 ease-in-out"
         onClick={() => setOpen(true)}
       >
-        {name}
+        Watch Video
       </button>
       <ModalVideo
         channel="youtube"
