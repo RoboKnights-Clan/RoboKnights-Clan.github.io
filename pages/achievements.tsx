@@ -18,6 +18,7 @@ const AlumniPage: NextPage = () => {
         <td className="px-4 pr-0 py-3">{ment.level}</td>
         <td className="px-4 py-3">{ment.year}</td>
         <td className="px-4 py-3">{ment.prize}</td>
+        <td className="px-4 py-3">{ment.members ? ment.members.join(", ") : "-"}</td>
       </tr>
     );
   });
@@ -50,6 +51,9 @@ const AlumniPage: NextPage = () => {
                 </th>
                 <th className="px-4 py-3  tracking-wider font-bold text-sm uppercase font-sansm">
                   Prize
+                </th>
+                <th className="px-4 py-3  tracking-wider font-bold text-sm uppercase font-sansm">
+                  Members
                 </th>
               </tr>
             </thead>
