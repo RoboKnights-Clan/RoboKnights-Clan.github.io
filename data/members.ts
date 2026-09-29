@@ -2,6 +2,90 @@ export const members = [
   {
     year: "Class 12",
     members: [
+       {
+        name: "Shaurya Markanda",
+        role: "President",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+       {
+        name: "Abhinav Singh",
+        role: "President",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Yuvraj Matta",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "youtube", url: "https://m.youtube.com/channel/UCqr9DHvhR0r-JIoutyNFhxg" },
+          { type: "linkedin", url: "https://www.linkedin.com/in/yuvraj-matta-131764220" },
+        ],
+      },
+      {
+        name: "Aayush Gaur",
+        role: "Core Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Nabhay Khanna",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Karun Sharma",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Zonish Siddiqui",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Arya Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "Class 11",
+    members: [
       {
         name: "Arhaan Gupta",
         role: "Member",
@@ -55,7 +139,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 11",
+    year: "Class 10",
     members: [
       {
         name: "Arhaan Sharma",
@@ -87,26 +171,7 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-      {
-        name: "Kyraan Katyal",
-        role: "Core Member",
-        src: "",
-        socials: [
-          { type: "github", url: "https://github.com" },
-          { type: "linkedin", url: "https://in.linkedin.com/in/kyraan-katyal-4b795b365" },
-          { type: "instagram", url: "https://www.instagram.com/kyr44nn/" },
-        ],
-      },
-      {
-        name: "Naitik Jindal",
-        role: "Core Member",
-        src: "",
-        socials: [
-          { type: "instagram", url: "https://www.instagram.com/nj__priv07/" },
-          { type: "github", url: "https://github.com/iamnaitiknj" },
-          { type: "linkedin", url: "https://www.linkedin.com/in/naitik-jindal-305989301/" },
-        ],
-      },
+      
       {
         name: "Adhiraj Jain",
         role: "Core Member",
@@ -127,7 +192,16 @@ export const members = [
           { type: "linkedin", url: "https://www.linkedin.com/in" },
         ],
       },
-      
+      {
+        name: "Kyraan Katyal",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://in.linkedin.com/in/kyraan-katyal-4b795b365" },
+          { type: "instagram", url: "https://www.instagram.com/kyr44nn/" },
+        ],
+      },
   {
         name: "Showaiz Noor Ahmad",
         role: "Member",
@@ -179,6 +253,26 @@ export const members = [
         ],
       },
       {
+        name: "Animikha Bagchi",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
+        name: "Naitik Jindal",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
+      {
         name: "Yuvaan Mangla",
         role: "Member",
         src: "",
@@ -192,7 +286,7 @@ export const members = [
   },
 {
      
-  year: "Class 10",
+  year: "Class 9",
     members: [
       {
         name: "Devin Jain",
@@ -227,8 +321,18 @@ export const members = [
     ],
   },
   {
-    year: "Class 9",
+    year: "Class 8",
     members: [
+      {
+        name: "Krishav Jain",
+        role: "Member",
+        src: "",
+        socials: [
+          { type: "instagram", url: "https://www.instagram.com/" },
+          { type: "github", url: "https://github.com" },
+          { type: "linkedin", url: "https://www.linkedin.com/in" },
+        ],
+      },
       {
         name: "Kiera Singal",
         role: "Member",
@@ -242,7 +346,7 @@ export const members = [
     ],
   },
   {
-    year: "Class 8",
+    year: "Class 7",
     members: [
       {
         name: "Yadnya Sagar",
@@ -261,7 +365,7 @@ export const members = [
     members: [
       {
         name: "Virat Kartikey",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -271,7 +375,7 @@ export const members = [
       },
     {
         name: "Anureet Kaur Sandhu ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -281,7 +385,7 @@ export const members = [
       },
     {
         name: "Apoorva Tiwari",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -291,7 +395,7 @@ export const members = [
       },
     {
         name: "Sia Sharma",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -301,7 +405,7 @@ export const members = [
       },
      {
         name: "Advit Gupta ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -311,7 +415,7 @@ export const members = [
       },
     {
         name: "Ranveer Kalra ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -321,7 +425,7 @@ export const members = [
       },
     {
         name: "Yuven K. Kanodia ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -331,7 +435,7 @@ export const members = [
       },
     {
         name: "Yashraj Kumar",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -341,7 +445,7 @@ export const members = [
       },
     {
         name: "Abraham William ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -351,7 +455,7 @@ export const members = [
       },
     {
         name: "N. Akshay Kumar ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -361,7 +465,7 @@ export const members = [
       },
     {
         name: "Aadvik Jain ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -371,7 +475,7 @@ export const members = [
       },
     {
         name: "Atharv Sachdeva Thakur  ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -381,7 +485,7 @@ export const members = [
       },
     {
         name: "Rishik Malik ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -391,7 +495,7 @@ export const members = [
       },
     {
         name: "Sanibh Garg ",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
@@ -401,7 +505,7 @@ export const members = [
       },
     {
         name: "Anusha Dhawan",
-        role: "New Inductees ",
+        role: "Member",
         src: "",
         socials: [
           { type: "instagram", url: "https://www.instagram.com/" },
