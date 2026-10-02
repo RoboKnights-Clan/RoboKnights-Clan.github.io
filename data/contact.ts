@@ -16,7 +16,11 @@ export const contacts: ContactPerson[] = [
     role: "Head,RoboKnights",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     email: "",
+=======
+    email: "ajithkumarkg@dpsrkp.net",
+>>>>>>> parent of 1a8b027 (many changes as said by hema maam)
 =======
     email: "ajithkumarkg@dpsrkp.net",
 >>>>>>> parent of 1a8b027 (many changes as said by hema maam)
@@ -77,12 +81,15 @@ export const contacts: ContactPerson[] = [
   },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   {
     name: "Kyraan Katyal",
     role: "Executive",
     remark: "For collaborations, parts and mechanical design",
     email: "",
   },
+=======
+>>>>>>> parent of 1a8b027 (many changes as said by hema maam)
 =======
 >>>>>>> parent of 1a8b027 (many changes as said by hema maam)
 =======
