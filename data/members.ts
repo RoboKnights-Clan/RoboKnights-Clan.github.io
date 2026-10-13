@@ -194,7 +194,7 @@ export const members = [
       },
       {
         name: "Kyraan Katyal",
-        role: "Member",
+        role: "Core Member",
         src: "",
         socials: [
           { type: "github", url: "https://github.com" },

@@ -49,9 +49,9 @@ export const contacts: ContactPerson[] = [
   },
   
   {
-    name: "Adhiraj Jain",
+    name: "Kyraan Katyal",
     role: "Executive",
-    email: "e11704adhiraj@dpsrkp.net",
+    email: "r23444kyraan@dpsrkp.net",
     remark: "Specialises in Arduino and 3D Design.",
   },
    {
